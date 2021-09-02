@@ -1,0 +1,100 @@
+@mixin h2font {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: white;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.bg-img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+.wrapper {
+  @include flex();
+  flex-direction: column;
+  .form-box {
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+  }
+  .top {
+    @include flex();
+    flex-direction: column;
+    .logo {
+      height: 140px;
+    }
+    .title {
+      margin-top: 20px;
+      @include flex();
+      flex-direction: row;
+      .title-text {
+        color: white;
+        padding: 15px;
+      }
+      svg {
+        width: 110px;
+      }
+    }
+  }
+  .bottom {
+    form {
+      ::placeholder {
+        color: white !important;
+      }
+      @include flex();
+      flex-direction: column;
+      input {
+        @include h2font();
+        outline: none;
+        height: 42px;
+        width: 280px;
+        border-radius: 40px;
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        padding-left: 10px;
+        margin: 20px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+      button {
+        @include h2font();
+        border: none;
+        height: 42px;
+        width: 280px;
+        margin: 25px;
+        border-radius: 40px;
+        background: linear-gradient(270deg, #156c42 38.89%, #fff500 138.16%);
+      }
+    }
+  }
+}
