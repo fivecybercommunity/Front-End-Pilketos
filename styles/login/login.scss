@@ -88,6 +88,13 @@ h1 {
       }
       button {
         @include h2font();
+        a:active,
+        a:hover,
+        a:visited,
+        a:link {
+          text-decoration: none;
+          color: white;
+        }
         border: none;
         height: 42px;
         width: 280px;

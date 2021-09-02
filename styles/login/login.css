@@ -166,4 +166,12 @@ h1 {
   background: -webkit-gradient(linear, right top, left top, color-stop(38.89%, #156c42), color-stop(138.16%, #fff500));
   background: linear-gradient(270deg, #156c42 38.89%, #fff500 138.16%);
 }
+
+.wrapper .bottom form button a:active,
+.wrapper .bottom form button a:hover,
+.wrapper .bottom form button a:visited,
+.wrapper .bottom form button a:link {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=login.css.map */
