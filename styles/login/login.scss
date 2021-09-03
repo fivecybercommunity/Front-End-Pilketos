@@ -105,3 +105,103 @@ h1 {
     }
   }
 }
+
+$desktop: 1920px;
+$laptop: 1250px; // bener label tidak correct dengan sizenya :)
+$tablet: 768px; // Hanya sebagai ratio mana yang lebih besar
+$phone: 480px;
+
+// Min WIDTH !!! so for outside desktop
+@media (min-width: 2150px) {
+  .wrapper {
+    .form-box {
+      height: 800px;
+    }
+    .top {
+      .logo {
+        height: 180px;
+      }
+      .title {
+        .title-text {
+          font-size: 34px;
+        }
+        svg {
+          width: 150px;
+        }
+      }
+    }
+  }
+  @media (max-height: 1250px) {
+    body {
+      height: 1250px;
+    }
+    .bg-img {
+      height: 1250px;
+    }
+  }
+}
+
+@media (max-width: 2150px) {
+  @media (max-height: 900px) {
+    .wrapper {
+      .form-box {
+        width: 490px;
+      }
+      .top {
+        .logo {
+          height: 120px;
+        }
+        .title {
+          .title-text {
+            font-size: 20px;
+          }
+          svg {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-height: 800px) {
+    body {
+      height: 800px;
+    }
+    .bg-img {
+      height: 800px;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  @media (max-height: 950px) {
+    .wrapper {
+      .form-box {
+        width: 490px;
+      }
+      .top {
+        .logo {
+          height: 120px;
+        }
+        .title {
+          .title-text {
+            font-size: 20px;
+          }
+          svg {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-height: 800px) {
+    body {
+      height: 800px;
+    }
+    .bg-img {
+      height: 800px;
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+}

@@ -174,4 +174,76 @@ h1 {
   text-decoration: none;
   color: white;
 }
+
+@media (min-width: 2150px) {
+  .wrapper .form-box {
+    height: 800px;
+  }
+  .wrapper .top .logo {
+    height: 180px;
+  }
+  .wrapper .top .title .title-text {
+    font-size: 34px;
+  }
+  .wrapper .top .title svg {
+    width: 150px;
+  }
+}
+
+@media (min-width: 2150px) and (max-height: 1250px) {
+  body {
+    height: 1250px;
+  }
+  .bg-img {
+    height: 1250px;
+  }
+}
+
+@media (max-width: 2150px) and (max-height: 900px) {
+  .wrapper .form-box {
+    width: 490px;
+  }
+  .wrapper .top .logo {
+    height: 120px;
+  }
+  .wrapper .top .title .title-text {
+    font-size: 20px;
+  }
+  .wrapper .top .title svg {
+    width: 80px;
+  }
+}
+
+@media (max-width: 2150px) and (max-height: 800px) {
+  body {
+    height: 800px;
+  }
+  .bg-img {
+    height: 800px;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 950px) {
+  .wrapper .form-box {
+    width: 490px;
+  }
+  .wrapper .top .logo {
+    height: 120px;
+  }
+  .wrapper .top .title .title-text {
+    font-size: 20px;
+  }
+  .wrapper .top .title svg {
+    width: 80px;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 800px) {
+  body {
+    height: 800px;
+  }
+  .bg-img {
+    height: 800px;
+  }
+}
 /*# sourceMappingURL=login.css.map */
