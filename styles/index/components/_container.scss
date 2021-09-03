@@ -1,0 +1,38 @@
+.jumbotron {
+    background-image : url('./photos/Lima5.png');
+    height : 100vh;
+    width : 100%;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : auto 100vh;
+}
+
+.title {
+    background-image : url('./photos/vector/jumbotron.svg');
+    height : 100vh;
+    width : auto;
+    background-position : right;
+    background-size : auto 100vh;
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+}
+
+.title-item {
+    width : 50%;
+}
+
+.penyambutan {
+    padding-left : 50px;
+}
+
+.transisi-jumbotron {
+    background-image : url('./photos/vector/transisi-jumbotron.svg');
+
+    background-repeat : no-repeat;
+    height : 400px;
+}
+
+.container {
+    width : 100px;
+}
