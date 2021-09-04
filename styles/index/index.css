@@ -5,10 +5,9 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100vh;
 }
 
-.title {
+.jumbotron .title {
   background-image: url("./photos/vector/jumbotron.svg");
   height: 100vh;
   width: auto;
@@ -24,24 +23,47 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-repeat: no-repeat;
 }
 
-.title-item {
+.jumbotron .title-item {
   width: 50%;
 }
 
-.penyambutan {
+.jumbotron .penyambutan {
   padding-left: 50px;
 }
 
 .transisi-jumbotron {
   background-image: url("./photos/vector/transisi-jumbotron.svg");
   background-repeat: no-repeat;
-  height: 400px;
+  height: 750px;
+  text-align: center;
+}
+
+.transisi-wrapper {
+  padding: 100px;
 }
 
 .container {
-  width: 100px;
+  width: 1024px;
+  margin: auto;
+}
+
+.caketos-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.caketos-item {
+  background-color: red;
+  width: 200px;
+  margin: 10px;
 }
 
 h1 {
@@ -60,6 +82,13 @@ h2 {
 
 .logo5 {
   height: 200px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.logo5-transisi {
+  height: 100px;
   width: auto;
   display: block;
   margin: auto;
