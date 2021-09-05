@@ -4,10 +4,15 @@
 /* Globar Var */
 /* Breakpoint */
 .container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
 }
+
 @media (max-width: 600px) {
   .container-nav {
     margin-bottom: 10vh;
@@ -20,6 +25,7 @@
   text-decoration: none;
   border-style: solid;
 }
+
 @media (max-width: 600px) {
   .tombol-home {
     padding-left: 10px;
@@ -36,6 +42,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   color: #006C38;
 }
+
 @media (max-width: 600px) {
   h1 {
     font-size: 8vw;
@@ -47,6 +54,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
+
 @media (max-width: 600px) {
   .tombol-submit {
     color: #006C38;
@@ -56,31 +64,60 @@ h1 {
 }
 
 .container-pilihan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Sub Element */
   /* Sub Element */
 }
+
 @media (max-width: 600px) {
   .container-pilihan {
     margin-bottom: 8vh;
-    column-gap: 2vh;
+    -webkit-column-gap: 2vh;
+            column-gap: 2vh;
   }
 }
+
 .container-pilihan .caketos {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Sub-Sub Element  */
   /* Sub-Sub Element  */
 }
+
 .container-pilihan .caketos .box-pilihan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffffff;
   /* Border stuff */
   border-style: solid;
@@ -91,16 +128,19 @@ h1 {
   padding-right: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
   margin-bottom: 1vh;
   /* Sub-Sub-Sub Element */
   /* Sub-Sub-Sub Element */
   /* Sub-Sub-Sub Element */
 }
+
 .container-pilihan .caketos .box-pilihan .nama-caketos {
   font-family: "Montserrat", sans-serif;
   color: #006C38;
 }
+
 @media (max-width: 600px) {
   .container-pilihan .caketos .box-pilihan .nama-caketos {
     margin-left: 4vw;
@@ -110,17 +150,20 @@ h1 {
     font-size: 5vw;
   }
 }
+
 @media (max-width: 600px) {
   .container-pilihan .caketos .box-pilihan .foto-caketos {
     margin-bottom: 5vh;
     width: 34vw;
   }
 }
+
 .container-pilihan .caketos .box-pilihan .tombol-profil {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #006C38;
 }
+
 @media (max-width: 600px) {
   .container-pilihan .caketos .box-pilihan .tombol-profil {
     margin-left: 4vw;
@@ -130,6 +173,7 @@ h1 {
     font-size: 5vw;
   }
 }
+
 .container-pilihan .caketos .tombol-vote {
   font-family: "Montserrat", sans-serif;
   font-size: 4vw;
@@ -143,8 +187,11 @@ h1 {
   padding-top: 3.8px;
   padding-bottom: 3.8px;
 }
+
 @media (max-width: 600px) {
   .container-pilihan .caketos-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .container-pilihan .caketos-2 {
@@ -154,18 +201,22 @@ h1 {
     display: none;
   }
 }
+
 .container-pilihan .panah {
   width: 6vw;
   padding-bottom: 2vh;
 }
+
 .container-pilihan .panah-kiri {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .background-page {
   position: absolute;
   z-index: 100;
 }
+
 @media (max-width: 600px) {
   .background-page {
     top: 45vh;
@@ -181,11 +232,21 @@ h1 {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media (max-width: 600px) {
   body {
     margin-left: 6vw;
@@ -194,6 +255,7 @@ body {
     margin-top: 3vh;
   }
 }
+
 @media (min-width: 600px) {
   body {
     margin-left: 4vw;
@@ -202,5 +264,4 @@ body {
     margin-top: 2vh;
   }
 }
-
 /*# sourceMappingURL=vote.css.map */

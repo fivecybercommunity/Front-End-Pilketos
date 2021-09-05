@@ -1,27 +1,101 @@
+// Umum
 h1 {
     font-family : $primary-font;
-    font-weight : bold;
     color : white;
     font-size : 48px;
 }
 
 h2 {
     font-family : $primary-font;
-    font-weight : bold;
     color : white;
-    font-size : 16px;
+    font-size : 24px;
 }
 
-.logo5 {
-    height : 200px;
-    width : auto;
-    display : block;
-    margin : auto;
+p {
+    font-family : $secondary-font;
 }
 
-.logo5-transisi {
-    height : 100px;
-    width : auto;
-    display : block;
+.container {
     margin : auto;
+
+    width : 1024px;
+    background-color : red;
+}
+
+// Spesifik
+
+.jumbotron {
+    height : 100vh;
+    width : 100%;
+
+    background-color : gray;
+
+    display : flex;
+    flex-direction : row;
+    align-items: center;
+
+    .jumbotron-title {
+        width : 50%;
+
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+
+        .jumbotron-title-logo {
+            img {
+                height : 200px;
+                width : auto;
+                padding : 25px;
+            }
+        }
+    }
+
+    .jumbotron-credit {
+        position : absolute;
+        bottom : 0px;
+    }
+}
+
+.transisi-jumbotron {
+    height : 500px;
+    width : 100%;
+
+    background-color : antiquewhite;
+}
+
+
+
+.sambutan-wrapper {
+    width : 768px;
+
+    margin : auto;
+    background-color : blue;
+
+    .foto-wrapper {
+        display : flex;
+        flex-direction : row;
+        justify-content : space-evenly;
+
+        img {
+            height : 150px;
+            width : auto;
+        }
+    }
+
+    .teks-wrapper {
+        width : 500px;
+
+        margin : auto;
+
+        background-color : #F9F9F9;
+
+        border-radius : 20px;
+        
+        .teks {
+
+            p {
+                padding : 20px;
+            }
+        }
+    }
 }
