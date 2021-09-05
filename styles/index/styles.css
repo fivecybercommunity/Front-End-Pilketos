@@ -11,14 +11,35 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 108, 56, 0.8);
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+  font-size: 16px;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .container {
   margin: auto;
   width: 1024px;
-  background-color: red;
+}
+
+.no-display {
+  display: none;
 }
 
 .jumbotron {
@@ -71,10 +92,12 @@ p {
 .sambutan-wrapper {
   width: 768px;
   margin: auto;
-  background-color: blue;
 }
 
 .sambutan-wrapper .foto-wrapper {
+  margin: auto;
+  width: 690px;
+  padding: 50px 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,19 +111,97 @@ p {
 }
 
 .sambutan-wrapper .foto-wrapper img {
-  height: 150px;
+  height: 125px;
   width: auto;
 }
 
 .sambutan-wrapper .teks-wrapper {
-  width: 500px;
+  width: 690px;
   margin: auto;
+  margin-bottom: 10px;
   background-color: #F9F9F9;
   border-radius: 20px;
 }
 
+.sambutan-wrapper .teks-wrapper .teks h3 {
+  padding: 20px 20px 0 20px;
+}
+
+.sambutan-wrapper .teks-wrapper .teks h4 {
+  padding: 0 20px 0 20px;
+}
+
 .sambutan-wrapper .teks-wrapper .teks p {
   padding: 20px;
+}
+
+.caketos-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 768px;
+}
+
+.caketos-wrapper .profil-caketos-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 690px;
+}
+
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos {
+  width: 200px;
+  border-color: #9F9F9F;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos h5 {
+  margin: auto;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos img {
+  width: auto;
+  height: 210px;
+  margin: auto;
+}
+
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #006C38;
+  text-decoration: none;
+  margin: auto;
+  padding: 40px 0 20px 0;
 }
 
 * {

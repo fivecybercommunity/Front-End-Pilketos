@@ -11,15 +11,36 @@ h2 {
     font-size : 24px;
 }
 
+h3 {
+    font-family : $primary-font;
+    color : #006C38;
+    font-size : 24px;
+}
+
+h4 {
+    font-family : $secondary-font;
+    color : rgba(0, 108, 56, 0.8);
+}
+
+h5 {
+    font-family : $primary-font;
+    color : #006C38;
+    font-size : 16px;
+}
+
 p {
     font-family : $secondary-font;
+    font-size : 16px;
 }
 
 .container {
     margin : auto;
 
     width : 1024px;
-    background-color : red;
+}
+
+.no-display {
+    display : none;
 }
 
 // Spesifik
@@ -69,32 +90,88 @@ p {
     width : 768px;
 
     margin : auto;
-    background-color : blue;
 
     .foto-wrapper {
+        margin : auto;
+        width : 690px;
+        padding : 50px 0 30px 0;
+
         display : flex;
         flex-direction : row;
         justify-content : space-evenly;
 
         img {
-            height : 150px;
+            height : 125px;
             width : auto;
         }
     }
 
     .teks-wrapper {
-        width : 500px;
-
+        width : 690px;
         margin : auto;
+        margin-bottom : 10px;
 
         background-color : #F9F9F9;
 
         border-radius : 20px;
         
         .teks {
-
+            h3 {
+                padding : 20px 20px 0 20px;
+            }
+            h4 {
+                padding : 0 20px 0 20px;
+            }
             p {
                 padding : 20px;
+            }
+        }
+    }
+}
+
+.caketos-wrapper {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    margin : auto;
+    width : 768px;
+
+    .profil-caketos-wrapper {
+        display : flex;
+        flex-direction : row;
+        justify-content : space-between;
+        margin : auto;
+        width : 690px;
+
+        .profil-caketos {
+            width : 200px;
+
+            border-color : #9F9F9F;
+            border-radius : 25px;
+            border-style : solid;
+            border-width : 2px;
+
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+
+            h5 {
+                margin : auto;
+                padding : 40px 0 0 0;
+                text-align : center;
+            }
+            img {
+                width : auto;
+                height : 210px;
+                margin : auto;
+            }
+            a {
+                font-family : $primary-font;
+                font-weight : bold;
+                color : #006C38;
+                text-decoration : none;
+                margin : auto;
+                padding : 40px 0 20px 0;
             }
         }
     }
