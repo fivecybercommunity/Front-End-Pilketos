@@ -1,0 +1,117 @@
+.container-pilihan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 8vh; 
+    column-gap: 2vh;
+  }
+
+  /* Sub Element */
+  .caketos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Sub-Sub Element  */
+    .box-pilihan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+    
+      /* Border stuff */
+      border-style: solid;
+      border-width: 1.8px;
+      border-color: #9F9F9F;
+      border-radius: 26px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+    
+      margin-bottom: 1vh;
+
+      /* Sub-Sub-Sub Element */
+      .nama-caketos {
+        font-family: $font;
+        color: $green;
+
+        @include breakpoint(mobile) {
+          $left-right: 4vw;
+          margin-left: $left-right; 
+          margin-right: $left-right;
+          margin-bottom: 14vh;
+          margin-top: 4vh;
+
+          font-size: 5vw;
+        }
+      }
+
+      /* Sub-Sub-Sub Element */
+      .foto-caketos {
+        @include breakpoint(mobile) {
+          margin-bottom: 5vh;
+          width: 34vw;
+        }
+      }
+
+      /* Sub-Sub-Sub Element */
+      .tombol-profil {
+        font-family: $font;
+        text-decoration: none;
+        color: $green;
+
+        @include breakpoint(mobile) {
+          $left-right: 4vw;
+          margin-left: $left-right; 
+          margin-right: $left-right;
+          margin-bottom: 5vh;
+          margin-top: 2vh;
+
+          font-size: 5vw;
+        }
+      }
+    }
+
+    /* Sub-Sub Element  */
+    .tombol-vote {
+      font-family: $font;
+      font-size: 4vw; 
+      color: #FFFFFF;
+      text-decoration: none;
+    
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 3.8px;
+      padding-bottom: 3.8px;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    .caketos-1{ display: flex; }
+    .caketos-2{ display: none; }
+    .caketos-3{ display: none; }
+  }
+
+  /* Sub Element */
+  .panah {
+    width: 6vw;
+    padding-bottom: 2vh;
+  }
+
+  .panah-kiri {
+    transform: rotateY(180deg);
+  }
+  
+}
+
+
+

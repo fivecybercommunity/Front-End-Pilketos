@@ -1,5 +1,178 @@
 /* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* Import Component */
+/* Globar Var */
+/* Breakpoint */
+.container-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .container-nav {
+    margin-bottom: 10vh;
+  }
+}
+
+.tombol-home {
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+  text-decoration: none;
+  border-style: solid;
+}
+@media (max-width: 600px) {
+  .tombol-home {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 16px;
+    border-width: 1px;
+    font-size: 3.6vw;
+  }
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+    margin-bottom: 10vh;
+  }
+}
+
+.tombol-submit {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .tombol-submit {
+    color: #006C38;
+    font-size: 4.4vw;
+    padding-bottom: 8vh;
+  }
+}
+
+.container-pilihan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* Sub Element */
+  /* Sub Element */
+}
+@media (max-width: 600px) {
+  .container-pilihan {
+    margin-bottom: 8vh;
+    column-gap: 2vh;
+  }
+}
+.container-pilihan .caketos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Sub-Sub Element  */
+  /* Sub-Sub Element  */
+}
+.container-pilihan .caketos .box-pilihan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  /* Border stuff */
+  border-style: solid;
+  border-width: 1.8px;
+  border-color: #9F9F9F;
+  border-radius: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1vh;
+  /* Sub-Sub-Sub Element */
+  /* Sub-Sub-Sub Element */
+  /* Sub-Sub-Sub Element */
+}
+.container-pilihan .caketos .box-pilihan .nama-caketos {
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+}
+@media (max-width: 600px) {
+  .container-pilihan .caketos .box-pilihan .nama-caketos {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 14vh;
+    margin-top: 4vh;
+    font-size: 5vw;
+  }
+}
+@media (max-width: 600px) {
+  .container-pilihan .caketos .box-pilihan .foto-caketos {
+    margin-bottom: 5vh;
+    width: 34vw;
+  }
+}
+.container-pilihan .caketos .box-pilihan .tombol-profil {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #006C38;
+}
+@media (max-width: 600px) {
+  .container-pilihan .caketos .box-pilihan .tombol-profil {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    font-size: 5vw;
+  }
+}
+.container-pilihan .caketos .tombol-vote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3.8px;
+  padding-bottom: 3.8px;
+}
+@media (max-width: 600px) {
+  .container-pilihan .caketos-1 {
+    display: flex;
+  }
+  .container-pilihan .caketos-2 {
+    display: none;
+  }
+  .container-pilihan .caketos-3 {
+    display: none;
+  }
+}
+.container-pilihan .panah {
+  width: 6vw;
+  padding-bottom: 2vh;
+}
+.container-pilihan .panah-kiri {
+  transform: rotateY(180deg);
+}
+
+.background-page {
+  position: absolute;
+  z-index: 100;
+}
+@media (max-width: 600px) {
+  .background-page {
+    top: 45vh;
+    left: -9.8vw;
+    width: 109vw;
+  }
+}
 
 * {
   padding: 0;
@@ -12,145 +185,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  margin-top: 2vh;
-  margin-right: 2vh;
+}
+@media (max-width: 600px) {
+  body {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
 }
 
-
-/* Hal - Hal yang berhubungan dgn Top Navigasi */
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 8vh; 
-}
-
-.tombol-navigasi {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.6vw; 
-  color: #006C38;
-  text-decoration: none;
-
-  /* Membuat spt tombol */
-  border-style: solid;
-  border-width: 1.8px;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-
-
-h1 {
-  margin-bottom: 12vh; 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 6.8vw; 
-  color: #006C38;
-}
-
-
-/* Hal - Hal yang berhubungan dgn Bagian Pilihan */
-.container-pilihan {
-  margin-bottom: 12vh; 
-}
-
-.profil {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profil-1 {
-  display: flex;
-}
-.profil-2 {
-  display: none;  
-}
-
-.profil-3 {
-  display: none;  
-}
-
-.box-pilihan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-
-  /* Border stuff */
-  border-style: solid;
-  border-width: 1.8px;
-  border-color: #9F9F9F;
-  border-radius: 26px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
-
-  margin-bottom: 1vh;
-}
-
-.nama-caketos {
-  margin-right: 4vw; 
-  margin-left: 4vw;
-  margin-top: 3vh;
-  margin-bottom: 16vh;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px; 
-  color: #006C38;
-}
-
-.foto-profil {
-  margin-bottom: 5vh;
-  width: 28vw;
-}
-
-.tombol-profil {
-  margin-bottom: 4vh;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4.8vw; 
-  color: #006C38;
-  text-decoration: none;
-}
-
-.tombol-vote {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4vw; 
-  color: #FFFFFF;
-  text-decoration: none;
-
-  /* Membuat spt tombol */
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 3.8px;
-  padding-bottom: 3.8px;
-}
-
-
-/* Hal - Hal yang berhubungan dgn Tombol Submit */
-.tombol-submit {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4.8vw; 
-  color: #006C38;
-  text-decoration: none;
-}
-
-
-/* Hal - Hal yang berhubungan dgn Background Page */
-.background-page {
-  position: absolute;
-  top: 39vh;
-  right: 1vw;
-  left: -8.8vw;
-  z-index: 100;
-  width: 109vw;
-}
+/*# sourceMappingURL=vote.css.map */
