@@ -1,4 +1,8 @@
 // Umum
+body {
+    overflow-x : hidden;
+}
+
 h1 {
     font-family : $primary-font;
     color : white;
@@ -35,12 +39,19 @@ p {
 
 .container {
     margin : auto;
-
     width : 1024px;
+    padding : 50px;
+    position : relative;
 }
 
 .no-display {
     display : none;
+}
+
+.sambutan {
+    color : #006C38;
+    text-align : center;
+    font-size : 32px;
 }
 
 // Spesifik
@@ -135,6 +146,7 @@ p {
     align-items : center;
     margin : auto;
     width : 768px;
+    padding : 50px 0;
 
     .profil-caketos-wrapper {
         display : flex;
@@ -142,6 +154,7 @@ p {
         justify-content : space-between;
         margin : auto;
         width : 690px;
+        padding : 50px 0;
 
         .profil-caketos {
             width : 200px;
@@ -150,6 +163,7 @@ p {
             border-radius : 25px;
             border-style : solid;
             border-width : 2px;
+            background-color : white;
 
             display : flex;
             flex-direction : column;
@@ -173,6 +187,33 @@ p {
                 margin : auto;
                 padding : 40px 0 20px 0;
             }
+        }
+    }
+}
+.tombol-vote {
+    text-align : center;
+
+    a {
+        font-family : $primary-font;
+        font-weight : bold;
+
+        text-decoration : none;
+        color : black;
+        border-width : 2px;
+        border-radius : 25px;
+        border-color : black;
+        border-style: solid;
+        padding : 15px;
+    }
+}
+
+.profil-caketos-background {
+    position : relative;
+    .background-footer {
+        img {
+            position : absolute;
+            bottom : 0px;
+            z-index : -1;
         }
     }
 }

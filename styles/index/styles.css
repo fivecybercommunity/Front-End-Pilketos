@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -36,10 +40,18 @@ p {
 .container {
   margin: auto;
   width: 1024px;
+  padding: 50px;
+  position: relative;
 }
 
 .no-display {
   display: none;
+}
+
+.sambutan {
+  color: #006C38;
+  text-align: center;
+  font-size: 32px;
 }
 
 .jumbotron {
@@ -148,6 +160,7 @@ p {
           align-items: center;
   margin: auto;
   width: 768px;
+  padding: 50px 0;
 }
 
 .caketos-wrapper .profil-caketos-wrapper {
@@ -163,6 +176,7 @@ p {
           justify-content: space-between;
   margin: auto;
   width: 690px;
+  padding: 50px 0;
 }
 
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos {
@@ -171,6 +185,7 @@ p {
   border-radius: 25px;
   border-style: solid;
   border-width: 2px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +217,32 @@ p {
   text-decoration: none;
   margin: auto;
   padding: 40px 0 20px 0;
+}
+
+.tombol-vote {
+  text-align: center;
+}
+
+.tombol-vote a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: black;
+  border-style: solid;
+  padding: 15px;
+}
+
+.profil-caketos-background {
+  position: relative;
+}
+
+.profil-caketos-background .background-footer img {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
 }
 
 * {
