@@ -1,0 +1,9 @@
+h1 {
+  font-family: $font;
+  color: $green;
+
+  @include breakpoint(mobile) {
+    font-size: 8vw;
+    margin-bottom: 10vh;
+  }
+}

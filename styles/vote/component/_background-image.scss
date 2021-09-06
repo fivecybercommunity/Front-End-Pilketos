@@ -1,0 +1,11 @@
+.background-page {
+  position: absolute;
+  z-index: 100;
+
+  @include breakpoint(mobile) {
+    top: 45vh;
+    left: -9.8vw;
+    width: 109vw;
+  }
+}
+

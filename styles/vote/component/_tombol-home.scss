@@ -1,0 +1,31 @@
+.container-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 10vh;
+  }
+}
+
+.tombol-home {
+  font-family: $font;
+  color: $green;
+  text-decoration: none;
+  border-style: solid;
+
+  @include breakpoint(mobile) {
+    $left-right: 10px;
+    $top-bottom: 4px;
+    padding-left: $left-right;
+    padding-right: $left-right;
+    padding-bottom: $top-bottom;
+    padding-top: $top-bottom;
+
+    border-radius: 16px;
+    border-width: 1px;
+
+    font-size: 3.6vw;
+  }
+}
+

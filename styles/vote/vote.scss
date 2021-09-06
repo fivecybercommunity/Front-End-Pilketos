@@ -1,4 +1,44 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Import Component */
+@import './component/_bits';
+@import './component/_tombol-home';
+@import './component/_judul';
+@import './component/_tombol-submit';
+@import './component/_container-pilihan';
+@import './component/_background-image';
+
+
 * {
-  padding : 0;
-  margin : 0;
+  padding: 0;
+  margin: 0;
+  z-index: 200;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    $left-right: 6vw;
+    $top-bottom: 3vh;
+
+    margin-left: $left-right;
+    margin-right: $left-right;
+    margin-bottom: $top-bottom;
+    margin-top: $top-bottom;
+	}
+
+  @include breakpoint(desktop) {
+    $left-right: 4vw;
+    $top-bottom: 2vh;
+
+    margin-left: $left-right;
+    margin-right: $left-right;
+    margin-bottom: $top-bottom;
+    margin-top: $top-bottom;
+  }
 }
