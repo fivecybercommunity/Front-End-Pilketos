@@ -40,3 +40,35 @@ function gantiSambutan(id){
             break;
     }
 }
+
+function profilCaketos(id) {
+    switch(id) {
+        case 1:
+            document.getElementById("background-visi-misi").classList.remove("display-none");
+            document.getElementById("caketos-aulia").classList.remove("display-none");
+            document.getElementById("caketos-nabiel").classList.add("display-none");
+            document.getElementById("caketos-wildan").classList.add("display-none");
+            break;
+        case 2:
+            document.getElementById("background-visi-misi").classList.remove("display-none");
+            document.getElementById("caketos-aulia").classList.add("display-none");
+            document.getElementById("caketos-nabiel").classList.remove("display-none");
+            document.getElementById("caketos-wildan").classList.add("display-none");
+            break;
+        case 3:
+            document.getElementById("background-visi-misi").classList.remove("display-none");
+            document.getElementById("caketos-aulia").classList.add("display-none");
+            document.getElementById("caketos-nabiel").classList.add("display-none");
+            document.getElementById("caketos-wildan").classList.remove("display-none");
+            break;
+        default:
+            break;
+    }
+}
+
+function keluar() {
+    document.getElementById("background-visi-misi").classList.add("display-none");
+    document.getElementById("caketos-aulia").classList.add("display-none");
+    document.getElementById("caketos-nabiel").classList.add("display-none");
+    document.getElementById("caketos-wildan").classList.add("display-none");
+}
