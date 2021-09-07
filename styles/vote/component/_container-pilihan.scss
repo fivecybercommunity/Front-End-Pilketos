@@ -56,20 +56,14 @@
         color: $green;
 
         @include breakpoint(mobile) {
-          /* $left-right: 4vw; */
-          /* margin-left: $left-right;  */
-          /* margin-right: $left-right; */
-          margin-bottom: 9vh;
+          margin-bottom: 5vh;
           margin-top: 4vh;
 
           font-size: 3vw;
         }
 
         @include breakpoint(desktop) {
-          /* $left-right: 2vw; */
-          /* margin-left: $left-right;  */
-          /* margin-right: $left-right; */
-          margin-bottom: 15.8vh;
+          margin-bottom: 5.8vh;
           margin-top: 3.7vh;
 
           font-size: 1.2vw;
@@ -85,7 +79,7 @@
 
         @include breakpoint(desktop) {
           margin-bottom: 5vh;
-          width: 9vw;
+          width: 10vw;
         }
       }
 
