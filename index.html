@@ -23,13 +23,30 @@
         </div>
         <!-- Tempat promosi FCC hehe -->
         <div class="jumbotron-credit">
-            Kolaborasi antara PK dan FCC
+            <div class="jumbotron-credit-teks">
+                <h2>Kolaborasi PK dan FCC</h2>
+            </div>
+            <div class="jumbotron-credit-logo">
+                <img src="./styles/index/photos/logo-pk.png" alt="">
+                <img src="./styles/index/photos/logo-fcc.png" alt="">
+            </div>
+        </div>
+        <!-- Foto background -->
+        <div class="jumbotron-background">
+            <img src="./styles/index/photos/compressed/Lima.png" alt="">
+        </div>
+        <!-- Mask background -->
+        <div class="jumbotron-background-mask">
+            <img src="./styles/index/photos/vector/background-mask.svg" alt="">
         </div>
     </div>
 
     <!-- Transisi antara jumbotron dan konten -->
     <div class="transisi-jumbotron">
-
+        <h1>
+            SAMBUTAN
+        </h1>
+        <img src="./styles/index/photos/vector/transisi-jumbotron.svg" alt="">
     </div>
 
     <!-- Sambutan Kepsek dan Wakepsek -->
@@ -37,32 +54,74 @@
         <h2 class="sambutan">Kepala Sekolah dan Wakil Kepala Sekolah</h2>
         <div class="sambutan-wrapper">
             <div class="foto-wrapper">
-                <img src="./styles/index/photos/vector/foto-1.svg" alt="">
-                <img src="./styles/index/photos/vector/foto-2.svg" alt="">
-                <img src="./styles/index/photos/vector/foto-3.svg" alt="">
+                <img id="bu-heru-foto" onclick="gantiSambutan(1)" src="./styles/index/photos/bu-heru.png" alt="">
+                <img id="pak-eka-foto" onclick="gantiSambutan(2)" src="./styles/index/photos/pak-eka.png" alt="">
+                <img id="pak-mustar-foto" onclick="gantiSambutan(3)" src="./styles/index/photos/pak-mustar.png" alt="">
             </div>
             <div class="teks-wrapper">
                 <div class="teks" id="bu-heru">
                     <h3>Ibu Heru Ekowati, S.Pd., M.Pd.</h3>
                     <h4>Kepala Sekolah SMAN 5 Bandung</h4>
-                    <p>
-                        Tak terasa kepengurusan OSIS Periode XLVII sudah akan berakhir, maka tiba saatnya kita akan melakukan pemilihan Ketua OSIS Periode XLVIII.
-                    </p>
-                    <p>
-                        Pada pemilihan Ketua OSIS yang sekarang Ibu berharap para calon memiliki dedikasi yang tinggi sehingga bisa mengembangkan potensi dan kompetensi siswa SMAN 5 lebih hebat lagi baik dari segi akademis maupun non akademis.
-                    </p>
-                    <p>
-                        Ibu percaya para calon adalah siswa-siswi yang sangat hebat dan memiliki potensi yang luar biasa, semoga pada pemilihan Ketua OSIS periode XLVIII diberi kemudahan dan kelancaran serta mendapatkan pemimpin yang terbaik diantara para calon yang terbaik.
-                    </p>
-                    <p>
-                        Selamat semoga Allah selalu melindungi kita dan melancarkan segala kegiatan kita semua.
-                    </p>
+                    <div class="teks-sambutan">
+                        <p>
+                            <i>Assalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                        <p>
+                            Tak terasa kepengurusan OSIS Periode XLVII sudah akan berakhir, maka tiba saatnya kita akan melakukan pemilihan Ketua OSIS Periode XLVIII.
+                        </p>
+                        <p>
+                            Pada pemilihan Ketua OSIS yang sekarang Ibu berharap para calon memiliki dedikasi yang tinggi sehingga bisa mengembangkan potensi dan kompetensi siswa SMAN 5 lebih hebat lagi baik dari segi akademis maupun non akademis.
+                        </p>
+                        <p>
+                            Ibu percaya para calon adalah siswa-siswi yang sangat hebat dan memiliki potensi yang luar biasa, semoga pada pemilihan Ketua OSIS periode XLVIII diberi kemudahan dan kelancaran serta mendapatkan pemimpin yang terbaik diantara para calon yang terbaik.
+                        </p>
+                        <p>
+                            Selamat semoga Allah selalu melindungi kita dan melancarkan segala kegiatan kita semua.
+                        </p>
+                        <p>
+                            <i>Wassalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                    </div>
                 </div>
-                <div class="teks" id="pak-eka">
-
+                <div class="teks display-none" id="pak-eka">
+                    <h3>Bapak Eka Harijanto, M.Pd.</h3>
+                    <h4>Wakil Kepala Sekolah Bidang Kesiswaan SMAN 5 Bandung</h4>
+                    <div class="teks-sambutan">
+                        <p>
+                            <i>Een leidersweg is een lijdensweg. Leiden is lijden.</i> Jalan kepemimpinan adalah jalan penderitaan. Memimpin adalah menderita…
+                        </p>
+                        <p>
+                            Berilah kepemimpinan kepada yang bersedia menderita
+                        </p>
+                        <p>
+                            <i>A leader is one who knows the way, goes the way, and shows the way</i>
+                            <br>— John C. Maxwell
+                        </p>
+                    </div>
                 </div>
-                <div class="teks" id="pak-mustar">
-
+                <div class="teks display-none" id="pak-mustar">
+                    <h3>Bapak Mustar, S. Pd., M.M.</h3>
+                    <h4>Wakil Kepala Sekolah SMAN 5 Bandung</h4>
+                    <div class="teks-sambutan">
+                        <p>
+                            <i>Assalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                        <p>
+                            Semoga kita semua senantiasa dalam lindungan Allah SWT.
+                        </p>
+                        <p>
+                            Pemilihan Ketua OSIS Periode 48 segera akan kita laksanakan. Selamat buat para calon, dedikasikan diri untuk kesuksesan organisasi dan nama baik SMAN 5 Bandung.
+                        </p>
+                        <p>
+                            Selamat memilih untuk semua warga SMA Negeri 5 Bandung.
+                        </p>
+                        <p>
+                            Terima kasih kepada panitia dari Perwakilan Kelas, dan terima kasih pula kepada pengurus OSIS Periode 47.
+                        </p>
+                        <p>
+                            <i>Wassalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,25 +132,48 @@
         <h2 class="sambutan">Ketua OSIS dan Kordum PK</h2>
         <div class="sambutan-wrapper">
             <div class="foto-wrapper">
-                <img src="./styles/index/photos/vector/foto-1.svg" alt="">
-                <img src="./styles/index/photos/vector/foto-3.svg" alt="">
+                <img id="ariel-ketos-foto" onclick="gantiSambutan(4)" src="./styles/index/photos/ketos-ariel.png" alt="">
+                <img id="rayhan-kordum-foto" onclick="gantiSambutan(5)" src="./styles/index/photos/kordum-rayhan.png" alt="">
             </div>
             <div class="teks-wrapper">
                 <div class="teks" id="ariel-ketos">
                     <h3>Ariel Attalla Kautsar</h3>
                     <h4>Ketua OSIS SMAN 5 Bandung</h4>
-                    <p>
-                        Jabatan Ketua OSIS bukan hanya sekedar jabatan, tetapi sekaligus merupakan sebuah komitmen mengabdi untuk 5 hingga akhir hayat orang tersebut. Oleh karena itu, diperlukan kepercayaan mengabdi untuk 5 hingga akhir hayat orang tersebut. 
-                    </p>
-                    <p>
-                        Oleh karena itu, kepercayaan yang besar harus diberikan warga 5 untuk memilih pemimpin di 5 selanjutnya, dan jangan biarkan ada paksaan dari pihak luar untuk memilih salah satu calon karena suatu alasan. Ketahuilah visi misi, program kerja unggulan yang dimiliki setiap calon karena ia yang akan menentukan masa depan almamater ini selanjutnya.
-                    </p>
-                    <p>
-                        Semoga pemilihan Ketua OSIS Periode XLVIII ini dapat berjalan dengan lancar. Semangat berjuang untuk Calon Ketua OSIS dan gunakan hak pilih sebaik mungkin warga 5!
-                    </p>
+                    <div class="teks-sambutan">
+                        <p>
+                            <i>Assalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                        <p>
+                            Jabatan Ketua OSIS bukan hanya sekedar jabatan, tetapi sekaligus merupakan sebuah komitmen mengabdi untuk 5 hingga akhir hayat orang tersebut. Oleh karena itu, diperlukan kepercayaan mengabdi untuk 5 hingga akhir hayat orang tersebut. 
+                        </p>
+                        <p>
+                            Oleh karena itu, kepercayaan yang besar harus diberikan warga 5 untuk memilih pemimpin di 5 selanjutnya, dan jangan biarkan ada paksaan dari pihak luar untuk memilih salah satu calon karena suatu alasan. Ketahuilah visi misi, program kerja unggulan yang dimiliki setiap calon karena ia yang akan menentukan masa depan almamater ini selanjutnya.
+                        </p>
+                        <p>
+                            Semoga pemilihan Ketua OSIS Periode XLVIII ini dapat berjalan dengan lancar. Semangat berjuang untuk Calon Ketua OSIS dan gunakan hak pilih sebaik mungkin warga 5!
+                        </p>
+                        <p>
+                            <i>Wassalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                    </div>
                 </div>
-                <div class="teks" id="rayhan-kordum">
-
+                <div class="teks display-none" id="rayhan-kordum">
+                    <h3>Rayhan Nurrahman Adiprawira</h3>
+                    <h4>Koordinator Umum PK SMAN 5 Bandung</h4>
+                    <div class="teks-sambutan">
+                        <p>
+                            <i>Assalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                        <p>
+                            Tahun ini adalah tahun ke-2 Perwakilan Kelas 5 selaku panitia melakukan Pemilihan Ketua OSIS secara online. Banyak evaluasi dari tahun kemarin yang <i>alhamdulilah</i> sudah diperbaiki demi menjaga asas-asas demokrasi yang terus kita jaga sampai nanti, namun karena keterbatasan kami mohon maaf apabila ada yang dirasa tidak sesuai. Kritik maupun saran kami terima sebanyak-banyaknya agar bisa dijadikan evaluasi untuk selanjutnya.
+                        </p>
+                        <p>
+                            Semoga Pemilihan Ketua OSIS Periode XLVIII ini dapat berjalan dengan lancar. Selamat berjuang untuk para calon ketua OSIS dan selamat memilih untuk warga 5.  
+                        </p>
+                        <p>
+                            <i>Wassalamu’alaikum warahmatullah wabarakatuh.</i>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,17 +188,17 @@
                     <div class="profil-caketos">
                         <h5>AULIA NISA</h5>
                         <img src="./styles/index/photos/caketos-aulia.png" alt="">
-                        <a href="">LIHAT PROFIL</a>
+                        <h6>LIHAT PROFIL</h6>
                     </div>
                     <div class="profil-caketos">
                         <h5>NABIEL FIKRYA R</h5>
                         <img src="./styles/index/photos/caketos-nabiel.png" alt="">
-                        <a href="">LIHAT PROFIL</a>
+                        <h6>LIHAT PROFIL</h6>
                     </div>
                     <div class="profil-caketos">
                         <h5>WILDAN RIZKI W</h5>
                         <img src="./styles/index/photos/caketos-wildan.png" alt="">
-                        <a href="">LIHAT PROFIL</a>
+                        <h6>LIHAT PROFIL</h6>
                     </div>
                 </div>
             </div>
@@ -128,5 +210,8 @@
             <img src="./styles/index/photos/vector/footer.svg" alt="">
         </div>
     </div>
+
+    <!-- Javascript -->
+    <script src="./styles/index/scripts/scripts.js"></script>
 </body>
 </html>
