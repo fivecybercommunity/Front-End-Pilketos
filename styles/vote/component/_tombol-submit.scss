@@ -4,8 +4,17 @@
 
   @include breakpoint(mobile) {
     color: $green;
-    font-size: 4.4vw;
-    padding-bottom: 8vh;
+    font-size: 4vw;
+    padding-bottom: 5vh;
+  }
+
+  @include breakpoint(desktop) {
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    padding-bottom: 4vh;
   }
 }
 
+#dummyText {
+  display: none;
+}

@@ -3,9 +3,29 @@
   z-index: 100;
 
   @include breakpoint(mobile) {
-    top: 45vh;
-    left: -9.8vw;
-    width: 109vw;
+    top: 33vh;
+    left: -5.8vw;
+    width: 106vw;
+  }
+
+  @include breakpoint(desktop) {
+    top: 10vh;
+    left: 11.2vw;
+    width: 70vw;
   }
 }
 
+.top-background-image {
+  position: absolute;
+  z-index: 100;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+
+  @include breakpoint(desktop) {
+    top: 0vh;
+    left: 69.9vw;
+    width: 30vw;
+  }
+}

@@ -34,7 +34,7 @@ body {
 
   @include breakpoint(desktop) {
     $left-right: 4vw;
-    $top-bottom: 2vh;
+    $top-bottom: 6vh;
 
     margin-left: $left-right;
     margin-right: $left-right;

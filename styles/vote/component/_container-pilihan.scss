@@ -9,6 +9,11 @@
     column-gap: 2vh;
   }
 
+  @include breakpoint(desktop) {
+    margin-bottom: 10vh; 
+    column-gap: 5vh;
+  }
+
   /* Sub Element */
   .caketos {
     flex-direction: column;
@@ -22,6 +27,7 @@
       justify-content: center;
       align-items: center;
       background-color: #ffffff;
+      margin-bottom: 2vh;
     
       /* Border stuff */
       border-style: solid;
@@ -33,8 +39,16 @@
       padding-top: 2px;
       padding-bottom: 2px;
       box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
-    
-      margin-bottom: 1vh;
+
+      @include breakpoint(mobile) {
+        border-radius: 26px;
+        width: 38vw;
+      }
+
+      @include breakpoint(desktop) {
+        border-radius: 40px;
+        width: 17vw;
+      }
 
       /* Sub-Sub-Sub Element */
       .nama-caketos {
@@ -42,13 +56,23 @@
         color: $green;
 
         @include breakpoint(mobile) {
-          $left-right: 4vw;
-          margin-left: $left-right; 
-          margin-right: $left-right;
-          margin-bottom: 14vh;
+          /* $left-right: 4vw; */
+          /* margin-left: $left-right;  */
+          /* margin-right: $left-right; */
+          margin-bottom: 9vh;
           margin-top: 4vh;
 
-          font-size: 5vw;
+          font-size: 3vw;
+        }
+
+        @include breakpoint(desktop) {
+          /* $left-right: 2vw; */
+          /* margin-left: $left-right;  */
+          /* margin-right: $left-right; */
+          margin-bottom: 15.8vh;
+          margin-top: 3.7vh;
+
+          font-size: 1.2vw;
         }
       }
 
@@ -56,7 +80,12 @@
       .foto-caketos {
         @include breakpoint(mobile) {
           margin-bottom: 5vh;
-          width: 34vw;
+          width: 24vw;
+        }
+
+        @include breakpoint(desktop) {
+          margin-bottom: 5vh;
+          width: 9vw;
         }
       }
 
@@ -73,7 +102,17 @@
           margin-bottom: 5vh;
           margin-top: 2vh;
 
-          font-size: 5vw;
+          font-size: 2.8vw;
+        }
+
+        @include breakpoint(desktop) {
+          $left-right: 2vw;
+          margin-left: $left-right; 
+          margin-right: $left-right;
+          margin-bottom: 3vh;
+          margin-top: 1vh;
+
+          font-size: 1.2vw;
         }
       }
     }
@@ -81,36 +120,62 @@
     /* Sub-Sub Element  */
     .tombol-vote {
       font-family: $font;
-      font-size: 4vw; 
       color: #FFFFFF;
       text-decoration: none;
     
       border-style: solid;
-      border-width: 2px;
-      border-radius: 15px;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 3.8px;
       padding-bottom: 3.8px;
+
+      @include breakpoint(mobile) {
+        font-size: 2.8vw; 
+        border-width: 2px;
+        border-radius: 15px;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 1vw; 
+        border-width: 3px;
+        border-radius: 22px;
+      }
     }
   }
 
   @include breakpoint(mobile) {
-    .caketos-1{ display: flex; }
-    .caketos-2{ display: none; }
-    .caketos-3{ display: none; }
+    #caketos-1{ display: flex; }
+    #caketos-2{ display: none; }
+    #caketos-3{ display: none; }
+  }
+
+  @include breakpoint(desktop) {
+    #caketos-1{ display: flex; }
+    #caketos-2{ display: flex; }
+    #caketos-3{ display: flex; }
   }
 
   /* Sub Element */
   .panah {
-    width: 6vw;
-    padding-bottom: 2vh;
+    @include breakpoint(mobile) {
+      width: 4vw;
+      padding-bottom: 4vh;
+    }
+
+    @include breakpoint(desktop) {
+      display: none
+    }
   }
 
   .panah-kiri {
     transform: rotateY(180deg);
   }
-  
+
+  /* Sub Element */
+  .tombol {
+    border: none;
+    background-color: transparent;
+  }
 }
 
 
