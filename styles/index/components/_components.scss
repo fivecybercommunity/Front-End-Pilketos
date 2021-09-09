@@ -39,8 +39,7 @@ p {
 
 .container {
     margin : auto;
-    width : 1024px;
-    padding : 50px;
+    width : 100%;
     position : relative;
 }
 
@@ -113,6 +112,7 @@ p {
     .jumbotron-background {
         display : flex;
         justify-content : center;
+        
         img {
             position : absolute;
             bottom : 0px;
