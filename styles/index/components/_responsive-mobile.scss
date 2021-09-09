@@ -3,19 +3,19 @@
     h1 {
         font-family : $primary-font;
         color : white;
-        font-size : 48px;
+        font-size : 28px;
     }
 
     h2 {
         font-family : $primary-font;
         color : white;
-        font-size : 24px;
+        font-size : 12px;
     }
 
     h3 {
         font-family : $primary-font;
         color : #006C38;
-        font-size : 24px;
+        font-size : 20px;
     }
 
     h4 {
@@ -26,18 +26,18 @@
     h5 {
         font-family : $primary-font;
         color : #006C38;
-        font-size : 16px;
+        font-size : 12px;
     }
 
     p {
         font-family : $secondary-font;
-        font-size : 16px;
+        font-size : 14px;
     }
 
     .container {
         margin : auto;
-        width : 1024px;
-        padding : 50px;
+        width : 100%;
+        padding : 50px 0;
         position : relative;
     }
 
@@ -48,7 +48,7 @@
     .sambutan {
         color : #006C38;
         text-align : center;
-        font-size : 32px;
+        font-size : 16px;
     }
 
     // Spesifik
@@ -63,15 +63,17 @@
         align-items: center;
 
         .jumbotron-title {
-            width : 50%;
+            width : 100%;
 
             display : flex;
             flex-direction : column;
             align-items : center;
 
+            text-align : center;
+
             .jumbotron-title-logo {
                 img {
-                    height : 200px;
+                    height : 150px;
                     width : auto;
                     padding : 25px;
                 }
@@ -118,7 +120,8 @@
             }
         }
 
-        .jumbotron-background-mask {
+        .jumbotron-background-mask-desktop {
+            display : none;
             img {
                 height : 100vh;
                 width : auto;
@@ -129,42 +132,53 @@
                 z-index : -1;
             }
         }
-    }
 
-    .transisi-jumbotron {
-        position : relative;
-        height : 650px;
-        
-        display : flex;
-        justify-content : center;
+        .jumbotron-background-mask-mobile {
+            display : block;
+            height : 100vh;
 
-        h1 {
-            padding : 15%;
-        }
-
-        img {
             position : absolute;
-            top : 0px;
+            bottom : 0;
+            right : 0;
             z-index : -1;
         }
     }
 
+    .transisi-jumbotron {
+        height : 200px;
+        position : relative;
+    
+        h1 {
+            padding : 15% 0;
+            text-align : center;
+        }
+    
+        img {
+            position : absolute;
+            top : 0px;
+            z-index : -1;
+            width : 100%;
+            height : auto;
+            margin-top : -5px;
+        }
+    }
+
     .sambutan-wrapper {
-        width : 768px;
+        width : 100%;
 
         margin : auto;
 
         .foto-wrapper {
             margin : auto;
-            width : 690px;
-            padding : 50px 0 30px 0;
+            width : 100%;
+            padding : 25px 0 15px 0;
 
             display : flex;
             flex-direction : row;
             justify-content : space-evenly;
 
             img {
-                height : 150px;
+                height : 75px;
                 width : auto;
 
                 cursor : pointer;
@@ -181,7 +195,7 @@
         }
 
         .teks-wrapper {
-            width : 690px;
+            width : 360px;
             margin : auto;
             margin-bottom : 10px;
 
@@ -211,15 +225,15 @@
         flex-direction : column;
         align-items : center;
         margin : auto;
-        width : 768px;
+        width : 0;
         padding : 50px 0;
 
         .profil-caketos-wrapper {
             display : flex;
             flex-direction : row;
-            justify-content : space-between;
+            flex-wrap : wrap;
             margin : auto;
-            width : 690px;
+            width : 100%;
             padding : 50px 0;
 
             .profil-caketos {

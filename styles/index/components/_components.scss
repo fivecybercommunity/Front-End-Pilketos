@@ -121,7 +121,7 @@ p {
         }
     }
 
-    .jumbotron-background-mask {
+    .jumbotron-background-mask-desktop {
         img {
             height : 100vh;
             width : auto;
@@ -132,23 +132,27 @@ p {
             z-index : -1;
         }
     }
+
+    .jumbotron-background-mask-mobile {
+        display : none;
+    }
 }
 
 .transisi-jumbotron {
     position : relative;
-    height : 650px;
-    
-    display : flex;
-    justify-content : center;
 
     h1 {
-        padding : 15%;
+        padding : 15% 0;
+        text-align : center;
     }
 
     img {
         position : absolute;
         top : 0px;
         z-index : -1;
+        width : 100%;
+        height : auto;
+        margin-top : -5px;
     }
 }
 
@@ -219,6 +223,7 @@ p {
 
     .profil-caketos-wrapper {
         display : flex;
+        flex-wrap : wrap;
         flex-direction : row;
         justify-content : space-between;
         margin : auto;
