@@ -52,17 +52,17 @@
         </div>
         <div class="bottom">
             <form action="vote.html" autocomplete="off">
-                <input type="number" placeholder="Nomor Induk Siswa" id="NIS" require>
-                <input type="password" placeholder="Password" id="Password" require>
+                <input type="number" placeholder="Nomor Induk Siswa" id="NIS" required>
+                <input type="password" placeholder="Password" id="Password" required>
                 <button id="verifbtn" type="button">Login</button>
                 <div id="verifbox" class="wrapper-verif">
                     <div class="verif">
-                        <input type="password" placeholder="Password Verifikasi" id="password2">
+                        <input type="password" placeholder="Password Verifikasi" id="password2"required> 
                         <div class="showhide">
                             <input type="checkbox" onclick="show()">
                             <h3>Show Pasword</h3>
                         </div>
-                        <button type="submit">verifikasi</button>
+                        <button onclick="musthide()" type="submit">verifikasi</button>
                     </div>
                 </div>
             </form> 

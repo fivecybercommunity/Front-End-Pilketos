@@ -19,3 +19,10 @@ window.onclick = function(event) {
       x.type = "password";
     }
   }
+
+  function musthide(){
+    var x = document.getElementById("password2");
+    if(x.type != "password"){
+        x.type= "password";
+    }
+  }
