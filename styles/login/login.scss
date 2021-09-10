@@ -10,8 +10,7 @@
   justify-content: center;
   align-items: center;
 }
-body {
-}
+
 body {
   margin: 0;
   user-select: none;
@@ -218,6 +217,7 @@ $phone: 480px;
       }
     }
   }
+
   @media (max-height: 1250px) {
     body,
     .wrapper-verif {
