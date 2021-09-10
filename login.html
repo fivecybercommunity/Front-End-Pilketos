@@ -54,14 +54,15 @@
             <form action="vote.html" autocomplete="off">
                 <input type="number" placeholder="Nomor Induk Siswa" id="NIS" required>
                 <input type="password" placeholder="Password" id="password1" required>
-                <button onclick="checkisi()" type="button">Login</button>
+                <button onclick="checkisi()" type="button" onkeypress="checkisi()" id="btn1">Login</button>
                 <div id="verifbox" class="wrapper-verif">
                     <div class="verif">
                         <input type="password" placeholder="Password Verifikasi" id="password2"required> 
                         <div class="showhide">
-                            <button class="show" type="button" onmousedown="show()" onmouseup="hide()" ontouchstart="show()"><h3>perlihatkan</h3></button>
+                            <button class="show" type="button" onmousedown="show()" onmouseup="hide()" on ontouchstart="show()"><h3>Perlihatkan</h3></button>
                         </div>
                         <button onclick="musthide()" type="submit">verifikasi</button>
+                        <!-- UNTUK GAGAL PAKAI "inputsalah()"-->
                     </div>                   
                 </div>
             </form> 

@@ -28,21 +28,11 @@ window.onclick = function(event) {
     }
   }
 
-    
   function show() {
     document.getElementById("password2").type = "text";
   }
   function hide(){
     document.getElementById("password2").type = "password";
-  }
-
-  function showhide(){
-    var x = document.getElementById("password2");
-    if(x.type === "password"){
-        x.type = "text";
-    } else{
-        x.type = "password";
-    }
   }
 
   function musthide(){
@@ -57,5 +47,12 @@ window.onclick = function(event) {
     document.getElementById("password2").value = "";
     document.getElementById("password1").value = "";
     document.getElementById("NIS").value = "";
-    
+    alertbuatan("NIS atau Password salah");
 }
+
+addEventListener("keyup",function(event){
+if(event.keyCode==13){
+  event.preventDefault();
+  document.getElementById("btn1").click();
+}
+});
