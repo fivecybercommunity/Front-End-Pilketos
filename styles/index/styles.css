@@ -51,6 +51,7 @@ p {
   color: #006C38;
   text-align: center;
   font-size: 32px;
+  margin-top: 100px;
 }
 
 .jumbotron {
@@ -260,8 +261,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -293,9 +292,14 @@ p {
           justify-content: center;
 }
 
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos .nomor-urut {
+  padding: 25px 0 5px 0;
+  font-size: 24px;
+}
+
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos h5 {
   margin: auto;
-  padding: 25px 0 0 0;
+  padding: 0 0 0 0;
   text-align: center;
 }
 
@@ -330,26 +334,7 @@ p {
   border-color: white;
   border-style: solid;
   padding: 15px;
-}
-
-.profil-caketos-background {
-  position: relative;
-  height: 900px;
-}
-
-.profil-caketos-background .background-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.profil-caketos-background .background-footer img {
-  position: absolute;
-  bottom: 0px;
-  z-index: -1;
+  margin-bottom: 30px;
 }
 
 .background-visi-misi {
@@ -428,6 +413,45 @@ p {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.caketos-background {
+  position: relative;
+}
+
+.caketos-background .container {
+  padding-bottom: 0;
+}
+
+.caketos-background .footer-background {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -5px;
+  z-index: -3;
+}
+
+.footer {
+  background-color: #216353;
+}
+
+.footer .container {
+  padding-top: 0;
+}
+
+.footer .container .kontak {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.footer .credit-fcc {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.footer .credit-fcc h2 {
+  font-size: 16px;
+}
+
 @media (max-width: 480px) {
   h1 {
     font-family: "Montserrat", sans-serif;
@@ -463,13 +487,11 @@ p {
     padding: 50px 0;
     position: relative;
   }
-  .display-none {
-    display: none !important;
-  }
   .sambutan {
     color: #006C38;
     text-align: center;
     font-size: 16px;
+    margin-top: 0;
   }
   .jumbotron {
     height: 100vh;
@@ -655,7 +677,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
-    width: 768px;
+    width: 100%;
     padding: 50px 0;
   }
   .caketos-wrapper .profil-caketos-wrapper {
@@ -666,15 +688,18 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
-    width: 690px;
+    width: 100%;
     padding: 50px 0;
   }
   .caketos-wrapper .profil-caketos-wrapper .profil-caketos {
     width: 200px;
+    margin: 20px;
     border-color: #9F9F9F;
     border-radius: 25px;
     border-style: solid;
@@ -693,23 +718,9 @@ p {
   }
   .caketos-wrapper .profil-caketos-wrapper .profil-caketos h5 {
     margin: auto;
-    padding: 25px 0 0 0;
+    padding: 0;
     text-align: center;
-  }
-  .caketos-wrapper .profil-caketos-wrapper .profil-caketos img {
-    width: auto;
-    height: 210px;
-    margin: auto;
-  }
-  .caketos-wrapper .profil-caketos-wrapper .profil-caketos h6 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: #006C38;
-    text-decoration: none;
-    margin: auto;
-    padding: 40px 0 20px 0;
     font-size: 16px;
-    cursor: pointer;
   }
   .tombol-vote {
     text-align: center;
@@ -724,23 +735,6 @@ p {
     border-color: white;
     border-style: solid;
     padding: 15px;
-  }
-  .profil-caketos-background {
-    position: relative;
-    height: 900px;
-  }
-  .profil-caketos-background .background-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .profil-caketos-background .background-footer img {
-    position: absolute;
-    bottom: 0px;
-    z-index: -1;
   }
   .background-visi-misi {
     height: 100vh;
@@ -757,8 +751,8 @@ p {
     z-index: 2;
   }
   .background-visi-misi .visi-misi-wrapper {
-    width: 600px;
-    height: 725px;
+    width: 350px;
+    height: 500px;
     position: relative;
     margin: auto;
     background-color: #ffffff;
@@ -771,10 +765,15 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .background-visi-misi .visi-misi-wrapper .visi-misi-item {
+    overflow-y: scroll;
+    margin: 40px 10px 10px 10px;
+  }
   .background-visi-misi .visi-misi-wrapper .tombol-keluar {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 2;
   }
   .background-visi-misi .visi-misi-wrapper .tombol-keluar img {
     cursor: pointer;
@@ -796,17 +795,42 @@ p {
     padding-bottom: 40px;
   }
   .background-visi-misi .visi-misi-wrapper .visi-misi-content p {
-    padding-left: 20px;
+    padding-left: 10px;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
   }
   .background-visi-misi .visi-misi-wrapper .visi-misi-content ul {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .background-visi-misi .visi-misi-wrapper .visi-misi-content li {
     font-family: "Open Sans", sans-serif;
     padding: 2.5px;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
   }
+}
+
+.footer {
+  background-color: #216353;
+}
+
+.footer .container {
+  padding-top: 0;
+}
+
+.footer .container .kontak {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.footer .credit-fcc {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.footer .credit-fcc h2 {
+  font-size: 12px;
 }
 
 .bg-img1 {

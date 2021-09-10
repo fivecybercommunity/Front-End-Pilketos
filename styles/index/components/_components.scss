@@ -51,6 +51,7 @@ p {
     color : #006C38;
     text-align : center;
     font-size : 32px;
+    margin-top : 100px;
 }
 
 // Spesifik
@@ -223,7 +224,6 @@ p {
 
     .profil-caketos-wrapper {
         display : flex;
-        flex-wrap : wrap;
         flex-direction : row;
         justify-content : space-between;
         margin : auto;
@@ -243,9 +243,14 @@ p {
             flex-direction : column;
             justify-content : center;
 
+            .nomor-urut {
+                padding : 25px 0 5px 0;
+                font-size : 24px;
+            }
+
             h5 {
                 margin : auto;
-                padding : 25px 0 0 0;
+                padding : 0 0 0 0;
                 text-align : center;
             }
             img {
@@ -280,21 +285,7 @@ p {
         border-color : white;
         border-style: solid;
         padding : 15px;
-    }
-}
-
-.profil-caketos-background {
-    position : relative;
-    height : 900px;
-    
-    .background-footer {
-        display : flex;
-        justify-content : center;
-        img {
-            position : absolute;
-            bottom : 0px;
-            z-index : -1;
-        }
+        margin-bottom : 30px;
     }
 }
 
@@ -364,6 +355,41 @@ p {
                 padding : 2.5px;
                 color : rgba($color: #000000, $alpha: .7)
             }
+        }
+    }
+}
+
+.caketos-background {
+    position : relative;
+    .container {
+        padding-bottom : 0;
+    }
+    .footer-background {
+        width : 100%;
+        height : auto;
+
+        position : absolute;
+        bottom : -5px;
+        z-index : -3;
+    }  
+}
+
+.footer {
+    background-color : #216353;
+    .container {
+        padding-top : 0;
+
+        .kontak {
+            text-align : center;
+            padding : 100px 0;
+        }
+    }
+    .credit-fcc {
+        text-align : center;
+        font-size : 16px;
+        padding : 10px;
+        h2 {
+            font-size : 16px;
         }
     }
 }

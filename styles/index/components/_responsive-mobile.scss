@@ -41,14 +41,11 @@
         position : relative;
     }
 
-    .display-none {
-        display : none !important;
-    }
-
     .sambutan {
         color : #006C38;
         text-align : center;
         font-size : 16px;
+        margin-top : 0;
     }
 
     // Spesifik
@@ -225,19 +222,21 @@
         flex-direction : column;
         align-items : center;
         margin : auto;
-        width : 0;
+        width : 100%;
         padding : 50px 0;
 
         .profil-caketos-wrapper {
             display : flex;
             flex-direction : row;
             flex-wrap : wrap;
+            justify-content : center;
             margin : auto;
             width : 100%;
             padding : 50px 0;
 
             .profil-caketos {
                 width : 200px;
+                margin : 20px;
 
                 border-color : #9F9F9F;
                 border-radius : 25px;
@@ -248,26 +247,12 @@
                 display : flex;
                 flex-direction : column;
                 justify-content : center;
-
+                
                 h5 {
                     margin : auto;
-                    padding : 25px 0 0 0;
+                    padding : 0;
                     text-align : center;
-                }
-                img {
-                    width : auto;
-                    height : 210px;
-                    margin : auto;
-                }
-                h6 {
-                    font-family : $primary-font;
-                    font-weight : bold;
-                    color : #006C38;
-                    text-decoration : none;
-                    margin : auto;
-                    padding : 40px 0 20px 0;
                     font-size : 16px;
-                    cursor : pointer;
                 }
             }
         }
@@ -289,21 +274,6 @@
         }
     }
 
-    .profil-caketos-background {
-        position : relative;
-        height : 900px;
-        
-        .background-footer {
-            display : flex;
-            justify-content : center;
-            img {
-                position : absolute;
-                bottom : 0px;
-                z-index : -1;
-            }
-        }
-    }
-
     .background-visi-misi {
         height : 100vh;
         width : 100%;
@@ -319,8 +289,8 @@
         z-index : 2;
 
         .visi-misi-wrapper {
-            width : 600px;
-            height : 725px;
+            width : 350px;
+            height : 500px;
             position : relative;
 
             margin : auto;
@@ -332,10 +302,15 @@
             display : flex;
             flex-direction : column;
 
+            .visi-misi-item{
+                overflow-y : scroll;
+                margin : 40px 10px 10px 10px;
+            }
             .tombol-keluar {
                 position : absolute;
                 top : 20px;
                 right : 20px;
+                z-index : 2;
 
                 img {
                     cursor : pointer;
@@ -359,18 +334,40 @@
                     padding-bottom : 40px;
                 }
                 p {
-                    padding-left : 20px;
-                    color : rgba($color: #000000, $alpha: .7)
+                    padding-left : 10px;
+                    color : rgba($color: #000000, $alpha: .7);
+                    font-size : 12px;
                 }
                 ul {
-                    padding-left : 20px;
+                    padding-left : 10px;
                 }
                 li {
                     font-family : $secondary-font;
                     padding : 2.5px;
-                    color : rgba($color: #000000, $alpha: .7)
+                    color : rgba($color: #000000, $alpha: .7);
+                    font-size : 12px;
                 }
             }
+        }
+    }
+}
+
+.footer {
+    background-color : #216353;
+    .container {
+        padding-top : 0;
+
+        .kontak {
+            text-align : center;
+            padding : 100px 0;
+        }
+    }
+    .credit-fcc {
+        text-align : center;
+        font-size : 16px;
+        padding : 10px;
+        h2 {
+            font-size : 12px;
         }
     }
 }

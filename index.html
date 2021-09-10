@@ -181,22 +181,23 @@
     </div>
 
     <!-- Profil Caketos -->
-    <div class="profil-caketos-background">
+    <div class="caketos-background">
         <div class="container">
             <div class="caketos-wrapper">
                 <h3>PROFIL CALON KETUA OSIS</h3>
                 <div class="profil-caketos-wrapper">
-                    <div class="profil-caketos">
+                    <div class="profil-caketos">                        <h5 class="nomor-urut">1</h5>
                         <h5>AULIA NISA</h5>
                         <img src="./styles/index/photos/caketos-aulia.png" alt="">
                         <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
                     </div>
-                    <div class="profil-caketos">
+                    <div class="profil-caketos">                        <h5 class="nomor-urut">2</h5>
                         <h5>NABIEL FIKRYA R</h5>
                         <img src="./styles/index/photos/caketos-nabiel.png" alt="">
                         <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
                     </div>
                     <div class="profil-caketos">
+                        <h5 class="nomor-urut">3</h5>
                         <h5>WILDAN RIZKI W</h5>
                         <img src="./styles/index/photos/caketos-wildan.png" alt="">
                         <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
@@ -207,73 +208,86 @@
                 <a href="./login.html">KE HALAMAN VOTING</a>
             </div>
         </div>
-        <div class="background-footer">
-            <img src="./styles/index/photos/vector/footer.svg" alt="">
-        </div>
+        <img src="./styles/index/photos/vector/footer-mobile.svg" alt="" class="footer-background">
     </div>
     
     <div class="background-visi-misi display-none" id="background-visi-misi">
         <div class="visi-misi-wrapper">
+            <div class="visi-misi-item">
+                <div class="visi-misi-content display-none" id="caketos-aulia">
+                    <h3 class="nama">AULIA NISA</h3>
+                    <img src="./styles/index/photos/caketos-aulia.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Menjadikan OSIS SMAN 5 Bandung sebagai organisasi yang aktif, adaptif, dan juga inovatif dalam kegiatan positif.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Meningkatkan mutu dan kualitas kinerja OSIS SMAN 5 Bandung</li>
+                            <li>Menyelaraskan kinerja OSIS SMAN 5 Bandung dengan keadaan global</li>
+                            <li>Mengembangkan bakat dan potensi siswa baik dalam bidang akademik maupun non akademik melalui program kerja yang diselenggarakan OSIS SMAN 5 Bandung</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="visi-misi-content display-none" id="caketos-nabiel">
+                    <h3 class="nama">NABIEL FIKRYA RIDA</h3>
+                    <img src="./styles/index/photos/caketos-nabiel.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Mewujudkan  SMAN 5 Bandung sebagai sekolah yang  unggul, aman, nyaman dengan siswa-siswi yang berakhlak mulia dengan berlandaskan ketakwaan.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Mengadakan kegiatan-kegiatan sosial dan keagamaan yang produktif</li>
+                            <li>Mengaktifkan program ekstrakurikuler yang ada di sekolah dan terlibat aktif untuk membangun kepengurusan yang kuat dan harmonis</li>
+                            <li>Mempererat kekeluargaan antar warga 5</li>
+                            <li>Meningkatkan dan menjaga mutu kerja OSIS yang berkualitas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="visi-misi-content display-none" id="caketos-wildan">
+                    <h3 class="nama">WILDAN RIZKI WIBAWA</h3>
+                    <img src="./styles/index/photos/caketos-wildan.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Menjadikan siswa/i SMA Negeri 5 Bandung yang inovatif, kreatif, disiplin, serta berakhlak mulia yang berasaskan Pancasila.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Membuat program kerja yang menjadi ciri khas dan bisa mempunyai kesan tersendiri bagi siswa/i SMA Negeri 5 Bandung.</li>
+                            <li>Menggerakkan kembali ekstrakurikuler agar siswa/i SMA Negeri 5 Bandung bisa mengembangkan bakatnya sesuai dengan kriteria yang diinginkan.</li>
+                            <li>Meningkatkan kembali kinerja OSIS sebagaimana mestinya yaitu menjadi wadah aspirasi siswa/i SMA Negeri 5 Bandung.</li>
+                            <li>Memperkuat kembali kegiatan yang bersifat keagamaan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="tombol-keluar">
                 <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="">
             </div>
-            <div class="visi-misi-content display-none" id="caketos-aulia">
-                <h3 class="nama">AULIA NISA</h3>
-                <img src="./styles/index/photos/caketos-aulia.png" alt="">
-                <h3 class="visi-misi">Visi</h3>
-                <div class="visi">
-                    <p>
-                        Menjadikan OSIS SMAN 5 Bandung sebagai organisasi yang aktif, adaptif, dan juga inovatif dalam kegiatan positif.
-                    </p>
-                </div>
-                <h3 class="visi-misi">Misi</h3>
-                <div class="misi">
-                    <ul>
-                        <li>Meningkatkan mutu dan kualitas kinerja OSIS SMAN 5 Bandung</li>
-                        <li>Menyelaraskan kinerja OSIS SMAN 5 Bandung dengan keadaan global</li>
-                        <li>Mengembangkan bakat dan potensi siswa baik dalam bidang akademik maupun non akademik melalui program kerja yang diselenggarakan OSIS SMAN 5 Bandung</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="visi-misi-content display-none" id="caketos-nabiel">
-                <h3 class="nama">NABIEL FIKRYA RIDA</h3>
-                <img src="./styles/index/photos/caketos-nabiel.png" alt="">
-                <h3 class="visi-misi">Visi</h3>
-                <div class="visi">
-                    <p>
-                        Mewujudkan  SMAN 5 Bandung sebagai sekolah yang  unggul, aman, nyaman dengan siswa-siswi yang berakhlak mulia dengan berlandaskan ketakwaan.
-                    </p>
-                </div>
-                <h3 class="visi-misi">Misi</h3>
-                <div class="misi">
-                    <ul>
-                        <li>Mengadakan kegiatan-kegiatan sosial dan keagamaan yang produktif</li>
-                        <li>Mengaktifkan program ekstrakurikuler yang ada di sekolah dan terlibat aktif untuk membangun kepengurusan yang kuat dan harmonis</li>
-                        <li>Mempererat kekeluargaan antar warga 5</li>
-                        <li>Meningkatkan dan menjaga mutu kerja OSIS yang berkualitas</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="visi-misi-content display-none" id="caketos-wildan">
-                <h3 class="nama">WILDAN RIZKI WIBAWA</h3>
-                <img src="./styles/index/photos/caketos-wildan.png" alt="">
-                <h3 class="visi-misi">Visi</h3>
-                <div class="visi">
-                    <p>
-                        Menjadikan siswa/i SMA Negeri 5 Bandung yang inovatif, kreatif, disiplin, serta berakhlak mulia yang berasaskan Pancasila.
-                    </p>
-                </div>
-                <h3 class="visi-misi">Misi</h3>
-                <div class="misi">
-                    <ul>
-                        <li>Membuat program kerja yang menjadi ciri khas dan bisa mempunyai kesan tersendiri bagi siswa/i SMA Negeri 5 Bandung.</li>
-                        <li>Menggerakkan kembali ekstrakurikuler agar siswa/i SMA Negeri 5 Bandung bisa mengembangkan bakatnya sesuai dengan kriteria yang diinginkan.</li>
-                        <li>Meningkatkan kembali kinerja OSIS sebagaimana mestinya yaitu menjadi wadah aspirasi siswa/i SMA Negeri 5 Bandung.</li>
-                        <li>Memperkuat kembali kegiatan yang bersifat keagamaan.</li>
-                    </ul>
-                </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="kontak">
+                <h2>Ada masalah? Tolong hubungi</h1>
+                <h3>(Nomor Kontak)</h3>
             </div>
         </div>
+        <div class="credit-fcc">
+            <h2>FIVECYBERCOMMUNITY — 2021</h2>
+        </div>
+        
     </div>
 
     <!-- Javascript -->
