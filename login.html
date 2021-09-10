@@ -53,20 +53,23 @@
         <div class="bottom">
             <form action="vote.html" autocomplete="off">
                 <input type="number" placeholder="Nomor Induk Siswa" id="NIS" required>
-                <input type="password" placeholder="Password" id="Password" required>
-                <button id="verifbtn" type="button">Login</button>
+                <input type="password" placeholder="Password" id="password1" required>
+                <button onclick="checkisi()" type="button">Login</button>
                 <div id="verifbox" class="wrapper-verif">
                     <div class="verif">
                         <input type="password" placeholder="Password Verifikasi" id="password2"required> 
                         <div class="showhide">
-                            <input type="checkbox" onclick="show()">
-                            <h3>Show Pasword</h3>
+                            <button class="show" type="button" onmousedown="show()" onmouseup="hide()" ontouchstart="show()"><h3>perlihatkan</h3></button>
                         </div>
                         <button onclick="musthide()" type="submit">verifikasi</button>
-                    </div>
+                    </div>                   
                 </div>
             </form> 
         </div>
+    </div>
+    <div class="alertbuatan" id="alertbuatan">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <h1 id="text"></h1>
     </div>
     <script src="./styles/login/scipts/login.js"></script>
 </body>
