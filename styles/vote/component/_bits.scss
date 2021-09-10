@@ -1,11 +1,17 @@
 /* Globar Var */
 $green: #006C38;
+$white: #ffffff;
 $font: 'Montserrat', sans-serif;
+
 
 /* Breakpoint */
 @mixin breakpoint($point) {
   @if $point == desktop {
-     @media (min-width: 600px) { @content ; }
+     @media (min-width: 1200px) { @content ; }
+  }
+
+  @else if $point == tablet {
+     @media (min-width: 600px)  { @content ; }
   }
 
   @else if $point == mobile {

@@ -1,0 +1,116 @@
+.core {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bagian-pemilihan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 0em;
+  }
+}
+
+.caketos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 6em;
+  }
+}
+
+.box-caketos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: $white;
+
+  @include breakpoint(mobile) {
+    border-width: 2px;
+    border-radius: 40px;
+    
+    padding: 0.5em;
+    width: 76%;
+    margin-bottom: 1em;
+  }
+}
+
+.box-caketos-2 {
+  @include breakpoint(mobile) {
+    width: 84%;
+  }
+}
+
+.no-caketos {
+  color: $green;
+  font-family: $font;
+
+  @include breakpoint(mobile) {
+    font-size: 2ch;
+
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+  }
+}
+
+.nama-caketos {
+  color: $green;
+  font-family: $font;
+
+  @include breakpoint(mobile) {
+    font-size: 2.7ch;
+    margin-bottom: 0.7em;
+  }
+}
+
+.foto-caketos {
+  @include breakpoint(mobile) {
+    width: 52%;
+  }
+}
+
+.tombol-profil {
+  border: none;
+  background-color: $white;
+
+  color: $green;
+  font-family: $font;
+
+  @include breakpoint(mobile) {
+    font-size: 2.4ch;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.tombol-check {
+  transform: scale(1.5);
+}
+
+
+.tombol-submit {
+  border: none;
+  background-color: $white;
+
+  color: $green;
+  font-family: $font;
+
+  @include breakpoint(mobile) {
+    font-size: 2.8ch;
+    padding-bottom: 10em;
+  }
+}

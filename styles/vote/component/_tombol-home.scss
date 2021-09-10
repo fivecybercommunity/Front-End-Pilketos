@@ -4,7 +4,7 @@
   width: 100%;
 
   @include breakpoint(mobile) {
-    margin-bottom: 10vh;
+    margin-bottom: 6em;
   }
 
   @include breakpoint(desktop) {
@@ -12,24 +12,28 @@
   }
 }
 
+
 .tombol-home {
   font-family: $font;
   text-decoration: none;
   border-style: solid;
 
   @include breakpoint(mobile) {
-    $left-right: 10px;
-    $top-bottom: 4px;
+    $left-right: 14px;
+    $top-bottom: 6px;
     padding-left: $left-right;
     padding-right: $left-right;
     padding-bottom: $top-bottom;
     padding-top: $top-bottom;
 
     border-radius: 16px;
-    border-width: 1px;
+    border-width: 1.9px;
 
-    font-size: 3vw;
+    font-size: 1.6ch;
     color: $green;
+
+    margin-top: 0.4em;
+    margin-right: 0.6em;
   }
 
   @include breakpoint(desktop) {

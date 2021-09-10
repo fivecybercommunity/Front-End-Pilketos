@@ -1,20 +1,3 @@
-.background-page {
-  position: absolute;
-  z-index: 100;
-
-  @include breakpoint(mobile) {
-    top: 33vh;
-    left: -5.8vw;
-    width: 106vw;
-  }
-
-  @include breakpoint(desktop) {
-    top: 10vh;
-    left: 11.2vw;
-    width: 70vw;
-  }
-}
-
 .top-background-image {
   position: absolute;
   z-index: 100;
@@ -29,3 +12,35 @@
     width: 30vw;
   }
 }
+
+
+.background-page {
+  z-index: 100;
+  position: absolute;
+}
+
+@include breakpoint(mobile) {
+  .background-1 {
+    left: -28px;
+    top: 363px;
+    width: 107%;
+  }
+
+  .background-2 {
+    left: 19px;
+    top: 914px;
+    width: 90%;
+  }
+
+  .background-3 {
+    left: 11px;
+    top: 1400px;
+    width: 94%;
+  }
+}
+
+@include breakpoint(desktop) {
+  .background-2{ display: none; } 
+  .background-3{ display: none; } 
+}
+
