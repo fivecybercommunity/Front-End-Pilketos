@@ -15,7 +15,7 @@
 
   <!-- Top Nav -->
   <div class='container-nav'>
-    <a class='tombol-home' href="">HOME</a>
+    <a class='tombol-home' href="./index.html">HOME</a>
   </div>
 
 
@@ -41,7 +41,7 @@
     <div class='caketos' id='caketos-2'>
       <div class='box-pilihan'>
         <h2 class='nama-caketos'>NABIEL FIKRYA R</h2>
-        <img class='foto-caketos' src="./styles/index/photos/caketos-nabiel.png" alt="">
+        <img class='foto-caketos foto-caketos2' src="./styles/index/photos/caketos-nabiel.png" alt="">
         <a class='tombol-profil' href="">LIHAT PROFIL</a>
       </div>
       <a class='tombol-vote' href="">VOTE</a>
@@ -81,7 +81,7 @@
       let idToHide = 'caketos-' + value;
       document.getElementById(idToHide).style.display = 'none';
 
-      if ('tambah') {
+      if (input === 'tambah') {
         if (value < 3) {
           value += 1;
         }
@@ -89,8 +89,9 @@
           value = 1;
         }
       }
-      else {
-        if (value > 0) {
+
+      else if (input === 'kurang') {
+        if (value > 1) {
           value -= 1;
         }
         else {

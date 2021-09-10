@@ -83,6 +83,16 @@
         }
       }
 
+      .foto-caketos2 {
+        @include breakpoint(mobile) {
+          width: 22.6vw;
+        }
+
+        @include breakpoint(desktop) {
+          width: 9.4vw;
+        }
+      }
+
       /* Sub-Sub-Sub Element */
       .tombol-profil {
         font-family: $font;
