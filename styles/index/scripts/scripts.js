@@ -72,3 +72,9 @@ function keluar() {
     document.getElementById("caketos-nabiel").classList.add("display-none");
     document.getElementById("caketos-wildan").classList.add("display-none");
 }
+
+var box = document.getElementById("background-visi-misi");
+box.onclick = function(){
+    keluar();
+}
+

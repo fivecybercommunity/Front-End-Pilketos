@@ -26,28 +26,28 @@ window.onclick = function(event) {
         document.getElementById("showhide").value = "none";
       }    
     }
-  }
+}
 
-  function show() {
-    document.getElementById("password2").type = "text";
-  }
-  function hide(){
-    document.getElementById("password2").type = "password";
-  }
+function show() {
+  document.getElementById("password2").type = "text";
+}
+function hide(){
+  document.getElementById("password2").type = "password";
+}
 
-  function musthide(){
-    var x = document.getElementById("password2");
-    if(x.type != "password"){
-        x.type= "password";
-    }
+function musthide(){
+  var x = document.getElementById("password2");
+  if(x.type != "password"){
+      x.type= "password";
   }
+}
 
-  function inputsalah(){
-    document.getElementById("verifbox").style.display = "none";
-    document.getElementById("password2").value = "";
-    document.getElementById("password1").value = "";
-    document.getElementById("NIS").value = "";
-    alertbuatan("NIS atau Password salah");
+function inputsalah(){
+  document.getElementById("verifbox").style.display = "none";
+  document.getElementById("password2").value = "";
+  document.getElementById("password1").value = "";
+  document.getElementById("NIS").value = "";
+  alertbuatan("NIS atau Password salah");
 }
 
 addEventListener("keyup",function(event){
