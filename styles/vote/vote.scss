@@ -1,15 +1,14 @@
 /* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-$primary-font : 'Montserrat', sans-serif;
-$secondary-font : 'Open Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
 
 /* Import Component */
-@import './component/_bits';
-@import './component/_tombol-home';
-@import './component/_judul';
-@import './component/_core';
-@import './component/_background-image';
-
+@import "./component/_bits";
+@import "./component/_tombol-home";
+@import "./component/_judul";
+@import "./component/_core";
+@import "./component/_background-image";
 
 /* Global CSS */
 * {
@@ -19,19 +18,19 @@ $secondary-font : 'Open Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
-  width : 10px;
+  width: 10px;
   &-track {
-      background : #f1f1f1;
+    background: #f1f1f1;
   }
   &-thumb {
-      background : #888;
-      border-radius : 15px;
+    background: #888;
+    border-radius: 15px;
   }
-  &-thumb:hover{
-      background : #555;
+  &-thumb:hover {
+    background: #555;
   }
   &-track-piece {
-      display : none;
+    display: none;
   }
 }
 
@@ -40,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x : hidden;
+  overflow-x: hidden;
 
   @include breakpoint(mobile) {
     $left-right: 1.1em;
@@ -50,7 +49,7 @@ body {
     margin-right: $left-right;
     margin-bottom: $top-bottom;
     margin-top: $top-bottom;
-	}
+  }
 
   @include breakpoint(tablet) {
     $left-right: 2.1em;
@@ -75,173 +74,175 @@ body {
 
 //Maaf kalau ga sesuai sama style kamu ya
 .display-none {
-  display : none !important;
+  display: none !important;
 }
 
-.tombol-submit, .tombol-profil, .tombol-vote {
-  cursor : pointer;
+.tombol-submit,
+.tombol-profil,
+.tombol-vote {
+  cursor: pointer;
 }
 
 .background-visi-misi {
-  height : 100vh;
-  width : 100%;
-  background-color : rgba(50, 50, 50, .7);
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.7);
 
-  position : fixed;
-  bottom : 0;
-  right : 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 
-  display : flex;
-  align-content : center;
+  display: flex;
+  align-content: center;
 
   p {
-    font-family : $secondary-font;
-    font-size : 16px;
-}
-h3 {
-  font-family : $primary-font;
-  color : #006C38;
-  font-size : 24px;
-}
+    font-family: $secondary-font;
+    font-size: 16px;
+  }
+  h3 {
+    font-family: $primary-font;
+    color: #006c38;
+    font-size: 24px;
+  }
 
-  z-index : 201;
+  z-index: 201;
 
   .visi-misi-wrapper {
-      width : 600px;
-      height : 600px;
-      position : relative;
+    width: 600px;
+    height: 600px;
+    position: relative;
 
-      margin : auto;
+    margin: auto;
 
-      background-color : #ffffff;
+    background-color: #ffffff;
 
-      border-radius : 25px;
+    border-radius: 25px;
 
-      display : flex;
-      flex-direction : column;
+    display: flex;
+    flex-direction: column;
 
-      .visi-misi-item{
-        overflow-y : scroll;
-        margin : 40px 10px 10px 10px;
+    .visi-misi-item {
+      overflow-y: scroll;
+      margin: 40px 10px 10px 10px;
     }
 
-      .tombol-keluar {
-          position : absolute;
-          top : 20px;
-          right : 20px;
+    .tombol-keluar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
 
-          img {
-              cursor : pointer;
-          }
+      img {
+        cursor: pointer;
       }
+    }
 
-      .visi-misi-content {
-          padding : 40px;
+    .visi-misi-content {
+      padding: 40px;
 
-          .nama {
-              text-align : center;
-          }
-          .visi-misi {
-              padding-top : 20px;
-          }
-          img {
-              height : 250px;
-              width : auto;
-              display : block;
-              margin : auto;
-              padding-bottom : 40px;
-          }
-          p {
-              padding-left : 20px;
-              color : rgba($color: #000000, $alpha: .7)
-          }
-          ul {
-              padding-left : 20px;
-          }
-          li {
-              font-family : $secondary-font;
-              padding : 2.5px;
-              color : rgba($color: #000000, $alpha: .7)
-          }
+      .nama {
+        text-align: center;
       }
+      .visi-misi {
+        padding-top: 20px;
+      }
+      img {
+        height: 250px;
+        width: auto;
+        display: block;
+        margin: auto;
+        padding-bottom: 40px;
+      }
+      p {
+        padding-left: 20px;
+        color: rgba($color: #000000, $alpha: 0.7);
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        font-family: $secondary-font;
+        padding: 2.5px;
+        color: rgba($color: #000000, $alpha: 0.7);
+      }
+    }
   }
 }
 
-@media (max-width : 480px) {
+@media (max-width: 480px) {
   .background-visi-misi {
-    height : 100vh;
-    width : 100%;
-    background-color : rgba(50, 50, 50, .7);
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.7);
 
-    position : fixed;
-    bottom : 0;
-    right : 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 
-    display : flex;
-    align-content : center;
+    display: flex;
+    align-content: center;
 
-    z-index : 202;
+    z-index: 202;
 
     .visi-misi-wrapper {
-        width : 350px;
-        height : 500px;
-        position : relative;
+      width: 350px;
+      height: 500px;
+      position: relative;
 
-        margin : auto;
+      margin: auto;
 
-        background-color : #ffffff;
+      background-color: #ffffff;
 
-        border-radius : 25px;
+      border-radius: 25px;
 
-        display : flex;
-        flex-direction : column;
+      display: flex;
+      flex-direction: column;
 
-        .visi-misi-item{
-            overflow-y : scroll;
-            margin : 40px 10px 10px 10px;
+      .visi-misi-item {
+        overflow-y: scroll;
+        margin: 40px 10px 10px 10px;
+      }
+      .tombol-keluar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+
+        img {
+          cursor: pointer;
         }
-        .tombol-keluar {
-            position : absolute;
-            top : 20px;
-            right : 20px;
-            z-index : 2;
+      }
 
-            img {
-                cursor : pointer;
-            }
+      .visi-misi-content {
+        padding: 40px;
+
+        .nama {
+          text-align: center;
         }
-
-        .visi-misi-content {
-            padding : 40px;
-
-            .nama {
-                text-align : center;
-            }
-            .visi-misi {
-                padding-top : 20px;
-            }
-            img {
-                height : 250px;
-                width : auto;
-                display : block;
-                margin : auto;
-                padding-bottom : 40px;
-            }
-            p {
-                padding-left : 10px;
-                color : rgba($color: #000000, $alpha: .7);
-                font-size : 12px;
-            }
-            ul {
-                padding-left : 10px;
-            }
-            li {
-                font-family : $secondary-font;
-                padding : 2.5px;
-                color : rgba($color: #000000, $alpha: .7);
-                font-size : 12px;
-            }
+        .visi-misi {
+          padding-top: 20px;
         }
+        img {
+          height: 250px;
+          width: auto;
+          display: block;
+          margin: auto;
+          padding-bottom: 40px;
+        }
+        p {
+          padding-left: 10px;
+          color: rgba($color: #000000, $alpha: 0.7);
+          font-size: 12px;
+        }
+        ul {
+          padding-left: 10px;
+        }
+        li {
+          font-family: $secondary-font;
+          padding: 2.5px;
+          color: rgba($color: #000000, $alpha: 0.7);
+          font-size: 12px;
+        }
+      }
     }
-}
+  }
 }
