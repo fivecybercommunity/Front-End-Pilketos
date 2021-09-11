@@ -12,8 +12,11 @@
   justify-content: center;
   align-items: center;
 
-  @include breakpoint(mobile) {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
+
+  @include breakpoint(desktop) {
+    flex-direction: row;
+    margin-bottom: 7em;
   }
 }
 
@@ -25,6 +28,17 @@
 
   @include breakpoint(mobile) {
     margin-bottom: 6em;
+  }
+
+  @include breakpoint(tablet) {
+    margin-bottom: 8em;
+  }
+
+  @include breakpoint(desktop) {
+    $left-right: 4em;
+    margin-left: $left-right;
+    margin-right: $left-right;
+    margin-bottom: 0px;
   }
 }
 
@@ -47,11 +61,37 @@
     width: 76%;
     margin-bottom: 1em;
   }
+
+  @include breakpoint(tablet) {
+    border-width: 2px;
+    border-radius: 40px;
+    
+    padding: 0.5em;
+    width: 120%;
+    margin-bottom: 2em;
+  }
+
+  @include breakpoint(desktop) {
+    border-width: 3px;
+    border-radius: 42px;
+    
+    padding: 0.5em;
+    width: 112%;
+    margin-bottom: 2em;
+  }
 }
 
 .box-caketos-2 {
   @include breakpoint(mobile) {
-    width: 84%;
+    width: 81%;
+  }
+
+  @include breakpoint(tablet) {
+    width: 128%;
+  }
+  
+  @include breakpoint(desktop) {
+    width: 118%;
   }
 }
 
@@ -65,6 +105,20 @@
     margin-top: 1em;
     margin-bottom: 0.8em;
   }
+
+  @include breakpoint(tablet) {
+    font-size: 3ch;
+
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  @include breakpoint(desktop) {
+    font-size: 3ch;
+
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
 }
 
 .nama-caketos {
@@ -75,11 +129,29 @@
     font-size: 2.7ch;
     margin-bottom: 0.7em;
   }
+
+  @include breakpoint(tablet) {
+    font-size: 3.5ch;
+    margin-bottom: 1em;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 3.5ch;
+    margin-bottom: 1em;
+  }
 }
 
 .foto-caketos {
   @include breakpoint(mobile) {
+    width: 57%;
+  }
+  
+  @include breakpoint(tablet) {
     width: 52%;
+  }
+
+  @include breakpoint(desktop) {
+    width: 55%;
   }
 }
 
@@ -95,16 +167,53 @@
     margin-top: 2em;
     margin-bottom: 2em;
   }
+
+  @include breakpoint(tablet) {
+    font-size: 3ch;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 3ch;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
 }
 
-.tombol-check {
-  transform: scale(1.5);
+.tombol-vote {
+  font-family: $font;
+  color: $white;
+  border: solid;
+  background-color: $green;
+  border-color: $white;
+
+  font-size: 1.7ch;
+  border-radius: 20px;
+  border-width: 2px;
+  $left-right: 12px;
+  $top-bottom: 6px;
+
+  @include breakpoint(tablet) {
+    font-size: 2ch;
+    border-radius: 22px;
+    border-width: 4px;
+    $left-right: 16px;
+    $top-bottom: 8px;
+  } 
+
+  padding: $top-bottom $left-right $top-bottom $left-right;
+}
+
+.tombol-vote:focus {
+  background-color: $white;
+  color: $green;
 }
 
 
 .tombol-submit {
   border: none;
-  background-color: $white;
+  background-color: transparent;
 
   color: $green;
   font-family: $font;
@@ -113,4 +222,19 @@
     font-size: 2.8ch;
     padding-bottom: 10em;
   }
+
+  @include breakpoint(tablet) {
+    font-size: 3.6ch;
+    padding-bottom: 14em;
+  }
+
+  @include breakpoint(desktop) {
+    color: $white;
+    font-size: 4.2ch;
+    padding-bottom: 5em;
+  }
+}
+
+#dummyText {
+  display: none;
 }

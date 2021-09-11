@@ -32,9 +32,19 @@ body {
     margin-top: $top-bottom;
 	}
 
+  @include breakpoint(tablet) {
+    $left-right: 2.1em;
+    $top-bottom: 2em;
+
+    margin-left: $left-right;
+    margin-right: $left-right;
+    margin-bottom: $top-bottom;
+    margin-top: $top-bottom;
+  }
+
   @include breakpoint(desktop) {
-    $left-right: 4vw;
-    $top-bottom: 6vh;
+    $left-right: 4em;
+    $top-bottom: 3em;
 
     margin-left: $left-right;
     margin-right: $left-right;

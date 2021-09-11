@@ -3,12 +3,10 @@
   justify-content: flex-end;
   width: 100%;
 
-  @include breakpoint(mobile) {
-    margin-bottom: 6em;
-  }
+  margin-bottom: 5em;
 
   @include breakpoint(desktop) {
-    margin-bottom: 4vh;
+    margin-bottom: 4em;
   }
 }
 
@@ -36,19 +34,40 @@
     margin-right: 0.6em;
   }
 
-  @include breakpoint(desktop) {
-    $left-right: 16px;
-    $top-bottom: 4px;
+  @include breakpoint(tablet) {
+    $left-right: 20px;
+    $top-bottom: 8px;
     padding-left: $left-right;
     padding-right: $left-right;
     padding-bottom: $top-bottom;
     padding-top: $top-bottom;
 
-    border-radius: 21px;
-    border-width: 3px;
+    border-radius: 26px;
+    border-width: 2px;
 
-    font-size: 1vw;
-    color: #FFFFFF;
+    font-size: 2.4ch;
+    color: $green;
+
+    margin-top: 0.4em;
+    margin-right: 0.6em;
+  }
+
+  @include breakpoint(desktop) {
+    $left-right: 24px;
+    $top-bottom: 10px;
+    padding-left: $left-right;
+    padding-right: $left-right;
+    padding-bottom: $top-bottom;
+    padding-top: $top-bottom;
+
+    border-radius: 28px;
+    border-width: 2px;
+
+    font-size: 2.8ch;
+    color: $white;
+
+    margin-top: 0.4em;
+    margin-right: 0.6em;
   }
 }
 

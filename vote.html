@@ -21,7 +21,7 @@
 
 
   <!-- Core -->
-  <form class='core' action="">
+  <form class='core' action="" onsubmit='return false'>
 
     <!-- Bagian Pemilihan -->
     <div class='bagian-pemilihan'> <!-- ----------------------------------------------------------- -->
@@ -34,7 +34,8 @@
           <img class='foto-caketos' src="./styles/index/photos/caketos-aulia.png" alt="">
           <button class='tombol-profil'>LIHAT PROFIL</button>
         </div>
-        <input class='tombol-check' type="radio" name='caketos' value='1' autocomplete='off'>
+
+        <button class='tombol-vote' id='caketos-1' onclick='tombolClick(this.id)'>VOTE</button>
       </div>
 
       <!-- Caketos 2 -->
@@ -42,10 +43,11 @@
         <div class='box-caketos box-caketos-2'>
           <h2 class='no-caketos'>2</h2>
           <h2 class='nama-caketos'>NABIEL FIKRYA R</h2>
-          <img class='foto-caketos' src="./styles/index/photos/caketos-nabiel.png" alt="">
+          <img class='foto-caketos foto-caketos-2' src="./styles/index/photos/caketos-nabiel.png" alt="">
           <button class='tombol-profil'>LIHAT PROFIL</button>
         </div>
-        <input class='tombol-check' type="radio" name='caketos' value='2' autocomplete='off'>
+
+        <button class='tombol-vote' id='caketos-2' onclick='tombolClick(this.id)'>VOTE</button>
       </div>
 
       <!-- Caketos 3 -->
@@ -56,11 +58,15 @@
           <img class='foto-caketos' src="./styles/index/photos/caketos-wildan.png" alt="">
           <button class='tombol-profil'>LIHAT PROFIL</button>
         </div>
-        <input class='tombol-check' type="radio" name='caketos' value='3' autocomplete='off'>
+
+        <button class='tombol-vote' id='caketos-3' onclick='tombolClick(this.id)'>VOTE</button>
       </div>
 
     </div> <!-- ------------------------------------------------------------------------------ -->
 
+
+    <!-- Tinggal Ambil Data (menggunakan DOM) dari 'dummyText' -->
+    <p id='dummyText'></p>
 
     <!-- Tombol Submit -->
     <div>
@@ -73,5 +79,19 @@
   <img class='background-page background-1' src="./styles/vote/photos/background-vote.svg" alt="">
   <img class='background-page background-2' src="./styles/vote/photos/background-vote-2.svg" alt="">
   <img class='background-page background-3' src="./styles/vote/photos/background-vote-3.svg" alt="">
+
+
+  <script>
+    function tombolClick(caketos) {
+      checkDummyText(caketos);
+      document.getElementById(caketos).focus();
+      console.log(caketos);
+    }
+
+    function checkDummyText(caketos) {
+      var rewrite = document.getElementById('dummyText');
+      rewrite.textContent = caketos;
+    }
+  </script>
 </body>
 </html>

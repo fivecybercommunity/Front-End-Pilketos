@@ -7,8 +7,13 @@ h1 {
     margin-bottom: 3em;
   }
 
+  @include breakpoint(tablet) {
+    font-size: 5.6ch;
+    margin-bottom: 3em;
+  }
+
   @include breakpoint(desktop) {
-    font-size: 3.2vw;
-    margin-bottom: 10.6vh;
+    font-size: 7ch;
+    margin-bottom: 2em;
   }
 }
