@@ -274,7 +274,7 @@ p {
 .tombol-vote {
     text-align : center;
 
-    a {
+    .tombol-vote-tombol {
         font-family : $primary-font;
         font-weight : bold;
 
@@ -286,6 +286,12 @@ p {
         border-style: solid;
         padding : 15px;
         margin-bottom : 30px;
+        transition : .5s;
+
+        &:hover {
+            color : #216453;
+            background-color : white;
+        }
     }
 }
 
@@ -305,7 +311,7 @@ p {
 
     .visi-misi-wrapper {
         width : 600px;
-        height : 725px;
+        height : 600px;
         position : relative;
 
         margin : auto;
@@ -316,6 +322,11 @@ p {
 
         display : flex;
         flex-direction : column;
+
+        .visi-misi-item{
+            overflow-y : scroll;
+            margin : 40px 10px 10px 10px;
+        }
 
         .tombol-keluar {
             position : absolute;
