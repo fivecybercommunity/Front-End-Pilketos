@@ -70,6 +70,18 @@ p {
           align-items: center;
 }
 
+.jumbotron .navbar a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: solid;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
 .jumbotron .jumbotron-title {
   width: 50%;
   display: -webkit-box;
