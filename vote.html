@@ -14,26 +14,36 @@
             <div class="caketos-wrapper">
                 <h3>VOTE SEKARANG!</h3>
                 <div class="profil-caketos-wrapper">
-                    <div class="profil-caketos">                        <h5 class="nomor-urut">1</h5>
-                        <h5>AULIA NISA</h5>
-                        <img src="./styles/index/photos/caketos-aulia.png" alt="">
-                        <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
+                    <div class="profil-caketos-wrapper-2">
+                        <div class="profil-caketos">                       
+                            <h5 class="nomor-urut">1</h5>
+                            <h5>AULIA NISA</h5>
+                            <img src="./styles/index/photos/caketos-aulia.png" alt="">
+                            <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
+                        </div>
+                        <button>VOTE</button>
                     </div>
-                    <div class="profil-caketos">                        <h5 class="nomor-urut">2</h5>
-                        <h5>NABIEL FIKRYA R</h5>
-                        <img src="./styles/index/photos/caketos-nabiel.png" alt="">
-                        <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
+                    <div class="profil-caketos-wrapper-2">
+                        <div class="profil-caketos">
+                            <h5 class="nomor-urut">2</h5>
+                            <h5>NABIEL FIKRYA R</h5>
+                            <img src="./styles/index/photos/caketos-nabiel.png" alt="">
+                            <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
+                        </div>
+                        <button>VOTE</button>
                     </div>
-                    <div class="profil-caketos">
-                        <h5 class="nomor-urut">3</h5>
-                        <h5>WILDAN RIZKI W</h5>
-                        <img src="./styles/index/photos/caketos-wildan.png" alt="">
-                        <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
+                    
+                    <div class="profil-caketos-wrapper-2">
+                        <div class="profil-caketos">
+                            <h5 class="nomor-urut">3</h5>
+                            <h5>WILDAN RIZKI W</h5>
+                            <img src="./styles/index/photos/caketos-wildan.png" alt="">
+                            <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
+                        </div>
+                        <button>VOTE</button>
                     </div>
                 </div>
-            </div>
-            <div class="tombol-vote">
-                <a href="./login.html" class="tombol-vote-tombol">KE HALAMAN VOTING</a>
+                <button class='tombol-submit' type="submit">SUBMIT VOTE</button>
             </div>
         </div>
     </div>
@@ -102,6 +112,12 @@
                 <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="">
             </div>
         </div>
+    </div>
+
+    <div class="display-none">
+        <input class="input" type="radio" name="Pilihan" value="calon1" id="calon1">
+        <input class="input" type="radio" name="Pilihan" value="calon2" id="calon2">
+        <input class="input" type="radio" name="Pilihan" value="calon3" id="calon3">
     </div>
 
     <script src="./styles/index/scripts/scripts.js"></script>

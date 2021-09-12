@@ -5,6 +5,7 @@ $secondary-font : 'Open Sans', sans-serif;
 * {
     padding : 0;
     margin : 0;
+    user-select : none;
 }
 
 ::-webkit-scrollbar {
@@ -88,6 +89,31 @@ p {
         width : 690px;
         padding : 50px 0;
 
+        .profil-caketos-wrapper-2 {
+            display : flex;
+            flex-direction : column;
+            align-items : center;
+        }
+
+        button {
+            padding : 10px 20px;
+            margin : 10px;
+            border-radius : 25px;
+
+            font-weight : bold;
+            font-family : $primary-font;
+            color : #006C38;
+
+            background-color : white;
+            border-color : #006C38;
+
+            &:focus{
+                color : white;
+                background-color : #1C6F4E;
+                border-color : white;
+            }
+        }
+
         .profil-caketos {
             width : 200px;
 
@@ -127,6 +153,24 @@ p {
                 cursor : pointer;
             }
         }
+    }
+    .tombol-submit {
+        padding : 10px 20px;
+            margin : 10px;
+            border-radius : 25px;
+
+            font-weight : bold;
+            font-family : $primary-font;
+            color : #006C38;
+
+            background-color : white;
+            border-color : #006C38;
+
+            &:active{
+                color : white;
+                background-color : #1C6F4E;
+                border-color : white;
+            }
     }
 }
 

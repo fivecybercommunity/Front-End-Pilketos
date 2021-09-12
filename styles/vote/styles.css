@@ -2,6 +2,10 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -105,6 +109,36 @@ p {
   padding: 50px 0;
 }
 
+.caketos-wrapper .profil-caketos-wrapper .profil-caketos-wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caketos-wrapper .profil-caketos-wrapper button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+  background-color: white;
+  border-color: #006C38;
+}
+
+.caketos-wrapper .profil-caketos-wrapper button:focus {
+  color: white;
+  background-color: #1C6F4E;
+  border-color: white;
+}
+
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos {
   width: 200px;
   border-color: #9F9F9F;
@@ -150,6 +184,23 @@ p {
   padding: 40px 0 20px 0;
   font-size: 16px;
   cursor: pointer;
+}
+
+.caketos-wrapper .tombol-submit {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #006C38;
+  background-color: white;
+  border-color: #006C38;
+}
+
+.caketos-wrapper .tombol-submit:active {
+  color: white;
+  background-color: #1C6F4E;
+  border-color: white;
 }
 
 .background-visi-misi {
