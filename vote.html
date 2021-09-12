@@ -4,160 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/vote/vote.css">
-    <link rel="icon" href="styles/favicon.ico" type="image/x-icon">
-    <title>Pilketos XLVIII</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/vote/styles.css">
 </head>
 <body>
-  <!-- 'HEADER' -->
-  <img class='top-background-image' src="./styles/vote/photos/top-background-image.svg" alt="">
-  <div class='container-nav'>
-    <a class='tombol-home' href="./index.html">HOME</a>
-  </div>
-
-
-  <!-- Judul -->
-  <h1>VOTE SEKARANG!</h1>
-
-
-  <!-- Core -->
-  <form class='core' action="" onsubmit='return false'>
-
-    <!-- Bagian Pemilihan -->
-    <div class='bagian-pemilihan'> <!-- ----------------------------------------------------------- -->
-
-      <!-- Caketos 1 -->
-      <div class='caketos'>
-        <div class='box-caketos'>
-          <h2 class='no-caketos'>1</h2>
-          <h2 class='nama-caketos'>AULIA NISA</h2>
-          <img class='foto-caketos' src="./styles/index/photos/caketos-aulia.png" alt="">
-          <button class='tombol-profil' onclick="profilCaketos(1)">LIHAT PROFIL</button>
+    <div class="voting-wrapper">
+        <img src="./styles/vote/photos/background.svg" class="background" alt="">
+        <div class="container">
+            <div class="caketos-wrapper">
+                <h3>VOTE SEKARANG!</h3>
+                <div class="profil-caketos-wrapper">
+                    <div class="profil-caketos">                        <h5 class="nomor-urut">1</h5>
+                        <h5>AULIA NISA</h5>
+                        <img src="./styles/index/photos/caketos-aulia.png" alt="">
+                        <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
+                    </div>
+                    <div class="profil-caketos">                        <h5 class="nomor-urut">2</h5>
+                        <h5>NABIEL FIKRYA R</h5>
+                        <img src="./styles/index/photos/caketos-nabiel.png" alt="">
+                        <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
+                    </div>
+                    <div class="profil-caketos">
+                        <h5 class="nomor-urut">3</h5>
+                        <h5>WILDAN RIZKI W</h5>
+                        <img src="./styles/index/photos/caketos-wildan.png" alt="">
+                        <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tombol-vote">
+                <a href="./login.html" class="tombol-vote-tombol">KE HALAMAN VOTING</a>
+            </div>
         </div>
-
-        <button class='tombol-vote' id='caketos-1' onclick='tombolClick(this.id)'>VOTE</button>
-      </div>
-
-      <!-- Caketos 2 -->
-      <div class='caketos'>
-        <div class='box-caketos box-caketos-2'>
-          <h2 class='no-caketos'>2</h2>
-          <h2 class='nama-caketos'>NABIEL FIKRYA R</h2>
-          <img class='foto-caketos foto-caketos-2' src="./styles/index/photos/caketos-nabiel.png" alt="">
-          <button class='tombol-profil' onclick="profilCaketos(2)">LIHAT PROFIL</button>
-        </div>
-
-        <button class='tombol-vote' id='caketos-2' onclick='tombolClick(this.id)'>VOTE</button>
-      </div>
-
-      <!-- Caketos 3 -->
-      <div class='caketos'>
-        <div class='box-caketos'>
-          <h2 class='no-caketos'>3</h2>
-          <h2 class='nama-caketos'>WILDAN RIZKI W</h2>
-          <img class='foto-caketos' src="./styles/index/photos/caketos-wildan.png" alt="">
-          <button class='tombol-profil' onclick="profilCaketos(3)">LIHAT PROFIL</button>
-        </div>
-
-        <button class='tombol-vote' id='caketos-3' onclick='tombolClick(this.id)'>VOTE</button>
-      </div>
-
-    </div> <!-- ------------------------------------------------------------------------------ -->
-
+    </div>
+    
     <div class="background-visi-misi display-none" id="background-visi-misi">
-      <div class="visi-misi-wrapper">
-          <div class="visi-misi-item">
-              <div class="visi-misi-content display-none" id="caketos-aulia">
-                  <h3 class="nama">AULIA NISA</h3>
-                  <img src="./styles/index/photos/caketos-aulia.png" alt="">
-                  <h3 class="visi-misi">Visi</h3>
-                  <div class="visi">
-                      <p>
-                          Menjadikan OSIS SMAN 5 Bandung sebagai organisasi yang aktif, adaptif, dan juga inovatif dalam kegiatan positif.
-                      </p>
-                  </div>
-                  <h3 class="visi-misi">Misi</h3>
-                  <div class="misi">
-                      <ul>
-                          <li>Meningkatkan mutu dan kualitas kinerja OSIS SMAN 5 Bandung</li>
-                          <li>Menyelaraskan kinerja OSIS SMAN 5 Bandung dengan keadaan global</li>
-                          <li>Mengembangkan bakat dan potensi siswa baik dalam bidang akademik maupun non akademik melalui program kerja yang diselenggarakan OSIS SMAN 5 Bandung</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="visi-misi-content display-none" id="caketos-nabiel">
-                  <h3 class="nama">NABIEL FIKRYA RIDA</h3>
-                  <img src="./styles/index/photos/caketos-nabiel.png" alt="">
-                  <h3 class="visi-misi">Visi</h3>
-                  <div class="visi">
-                      <p>
-                          Mewujudkan  SMAN 5 Bandung sebagai sekolah yang  unggul, aman, nyaman dengan siswa-siswi yang berakhlak mulia dengan berlandaskan ketakwaan.
-                      </p>
-                  </div>
-                  <h3 class="visi-misi">Misi</h3>
-                  <div class="misi">
-                      <ul>
-                          <li>Mengadakan kegiatan-kegiatan sosial dan keagamaan yang produktif</li>
-                          <li>Mengaktifkan program ekstrakurikuler yang ada di sekolah dan terlibat aktif untuk membangun kepengurusan yang kuat dan harmonis</li>
-                          <li>Mempererat kekeluargaan antar warga 5</li>
-                          <li>Meningkatkan dan menjaga mutu kerja OSIS yang berkualitas</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="visi-misi-content display-none" id="caketos-wildan">
-                  <h3 class="nama">WILDAN RIZKI WIBAWA</h3>
-                  <img src="./styles/index/photos/caketos-wildan.png" alt="">
-                  <h3 class="visi-misi">Visi</h3>
-                  <div class="visi">
-                      <p>
-                          Menjadikan siswa/i SMA Negeri 5 Bandung yang inovatif, kreatif, disiplin, serta berakhlak mulia yang berasaskan Pancasila.
-                      </p>
-                  </div>
-                  <h3 class="visi-misi">Misi</h3>
-                  <div class="misi">
-                      <ul>
-                          <li>Membuat program kerja yang menjadi ciri khas dan bisa mempunyai kesan tersendiri bagi siswa/i SMA Negeri 5 Bandung.</li>
-                          <li>Menggerakkan kembali ekstrakurikuler agar siswa/i SMA Negeri 5 Bandung bisa mengembangkan bakatnya sesuai dengan kriteria yang diinginkan.</li>
-                          <li>Meningkatkan kembali kinerja OSIS sebagaimana mestinya yaitu menjadi wadah aspirasi siswa/i SMA Negeri 5 Bandung.</li>
-                          <li>Memperkuat kembali kegiatan yang bersifat keagamaan.</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="tombol-keluar">
-              <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="">
-          </div>
-      </div>
-  </div>
-
-    <!-- Tinggal Ambil Data (menggunakan DOM) dari 'dummyText' -->
-    <p id='dummyText'></p>
-
-    <!-- Tombol Submit -->
-    <div>
-      <input class='tombol-submit' type="submit" value="SUBMIT VOTE">
+        <div class="visi-misi-wrapper">
+            <div class="visi-misi-item">
+                <div class="visi-misi-content display-none" id="caketos-aulia">
+                    <h3 class="nama">AULIA NISA</h3>
+                    <img src="./styles/index/photos/caketos-aulia.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Menjadikan OSIS SMAN 5 Bandung sebagai organisasi yang aktif, adaptif, dan juga inovatif dalam kegiatan positif.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Meningkatkan mutu dan kualitas kinerja OSIS SMAN 5 Bandung</li>
+                            <li>Menyelaraskan kinerja OSIS SMAN 5 Bandung dengan keadaan global</li>
+                            <li>Mengembangkan bakat dan potensi siswa baik dalam bidang akademik maupun non akademik melalui program kerja yang diselenggarakan OSIS SMAN 5 Bandung</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="visi-misi-content display-none" id="caketos-nabiel">
+                    <h3 class="nama">NABIEL FIKRYA RIDA</h3>
+                    <img src="./styles/index/photos/caketos-nabiel.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Mewujudkan  SMAN 5 Bandung sebagai sekolah yang  unggul, aman, nyaman dengan siswa-siswi yang berakhlak mulia dengan berlandaskan ketakwaan.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Mengadakan kegiatan-kegiatan sosial dan keagamaan yang produktif</li>
+                            <li>Mengaktifkan program ekstrakurikuler yang ada di sekolah dan terlibat aktif untuk membangun kepengurusan yang kuat dan harmonis</li>
+                            <li>Mempererat kekeluargaan antar warga 5</li>
+                            <li>Meningkatkan dan menjaga mutu kerja OSIS yang berkualitas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="visi-misi-content display-none" id="caketos-wildan">
+                    <h3 class="nama">WILDAN RIZKI WIBAWA</h3>
+                    <img src="./styles/index/photos/caketos-wildan.png" alt="">
+                    <h3 class="visi-misi">Visi</h3>
+                    <div class="visi">
+                        <p>
+                            Menjadikan siswa/i SMA Negeri 5 Bandung yang inovatif, kreatif, disiplin, serta berakhlak mulia yang berasaskan Pancasila.
+                        </p>
+                    </div>
+                    <h3 class="visi-misi">Misi</h3>
+                    <div class="misi">
+                        <ul>
+                            <li>Membuat program kerja yang menjadi ciri khas dan bisa mempunyai kesan tersendiri bagi siswa/i SMA Negeri 5 Bandung.</li>
+                            <li>Menggerakkan kembali ekstrakurikuler agar siswa/i SMA Negeri 5 Bandung bisa mengembangkan bakatnya sesuai dengan kriteria yang diinginkan.</li>
+                            <li>Meningkatkan kembali kinerja OSIS sebagaimana mestinya yaitu menjadi wadah aspirasi siswa/i SMA Negeri 5 Bandung.</li>
+                            <li>Memperkuat kembali kegiatan yang bersifat keagamaan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tombol-keluar">
+                <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="">
+            </div>
+        </div>
     </div>
 
-  </form>
-
-  <!-- Background Image -->
-  <img class='background-page background-1' src="./styles/vote/photos/background-vote.svg" alt="">
-  <img class='background-page background-2' src="./styles/vote/photos/background-vote-2.svg" alt="">
-  <img class='background-page background-3' src="./styles/vote/photos/background-vote-3.svg" alt="">
-
-
-  <script>
-    function tombolClick(caketos) {
-      checkDummyText(caketos);
-      document.getElementById(caketos).focus();
-      console.log(caketos);
-    }
-
-    function checkDummyText(caketos) {
-      var rewrite = document.getElementById('dummyText');
-      rewrite.textContent = caketos;
-    }
-  </script>
-  <script src="./styles/index/scripts/scripts.js"></script>
+    <script src="./styles/index/scripts/scripts.js"></script>
 </body>
 </html>
