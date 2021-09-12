@@ -21,7 +21,7 @@
                             <img src="./styles/index/photos/caketos-aulia.png" alt="">
                             <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
                         </div>
-                        <button>VOTE</button>
+                        <button id="caketos-1" onclick='tombolClick(this.id)'VOTE</button>
                     </div>
                     <div class="profil-caketos-wrapper-2">
                         <div class="profil-caketos">
@@ -30,7 +30,7 @@
                             <img src="./styles/index/photos/caketos-nabiel.png" alt="">
                             <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
                         </div>
-                        <button>VOTE</button>
+                        <button id="caketos-2" onclick='tombolClick(this.id)'>VOTE</button>
                     </div>
                     
                     <div class="profil-caketos-wrapper-2">
@@ -40,7 +40,7 @@
                             <img src="./styles/index/photos/caketos-wildan.png" alt="">
                             <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
                         </div>
-                        <button>VOTE</button>
+                        <button id="caketos-3" onclick='tombolClick(this.id)'>VOTE</button>
                     </div>
                 </div>
                 <button class='tombol-submit' type="submit">SUBMIT VOTE</button>
@@ -121,5 +121,22 @@
     </div>
 
     <script src="./styles/index/scripts/scripts.js"></script>
+    <script>
+        function tombolClick(caketos) {
+            checkDummyText(caketos);
+            document.getElementById(caketos).focus();
+            if (caketos == "caketos-1") {
+                document.getElementById("calon1").click();
+            } else {
+                if (caketos == "caketos-2") {
+                    document.getElementById("calon2").click();
+                } else {
+                    if (caketos == "caketos-3") {
+                        document.getElementById("calon3").click();
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
